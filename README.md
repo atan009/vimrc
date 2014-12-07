@@ -88,7 +88,7 @@ You can use the arrow keys to navigate between files/directories and
 press ENTER to read into it. To close NERDtree type "NERDTreeClose".
 To open it again, type ":NERDTree *an EXISTING directory".
 
-More information can be obtained at: https://github.com/scrooloose/nerdtree
+More info at: https://github.com/scrooloose/nerdtree
 
 Plugin #2 - SuperTab:
 ------------------------
@@ -97,30 +97,37 @@ already existing ones. This is useful for users that enjoy automatic text
 filling. By typing a few characters and pressing <TAB> the word will be
 filled automatically, unless there is more than one existing string with
 the same characters typed. In this situation, a list of words will be
-shown in which the user can choose the correct one. To install the plugin, 
-go to your "bundle" directory. Type
-"git clone https://github.com/ervandew/supertab". A new directory should
-have been created name "supertab".
-More information can be obtained at: https://github.com/ervandew/supertab
+shown in which the user can choose the correct one.
+Installation:
+-------------
+	cd ~/.vim/bundle
+    git clone https://github.com/ervandew/supertab.git
+A new directory should have been created named "supertab".
+
+More info at: https://github.com/ervandew/supertab
 
 Plugin #3 - Solarized:
 ----------------------
 Solarized changes the colorscheme of the vim editor. Often times, the
 default is not the best. It can be extremely irritable when you cannot
 differentiate between different types of files in vim as well as the
-variety of things within source code. To install this plugin, navigate
-to your bundle directory. Type 
-"git clone https://github.com/altercation/vim-colors-solarized".
+variety of things within source code. 
+Installation:
+--------------
+	cd ~/.vim/bundle
+	git clone https://github.com/altercation/vim-colors-solarized.git
+
 A new directory named "vim-colors-solarized" should have been added.
 Now, we will need to modify our .vimrc depending on the style we like.
 For a dark background type:
-syntax enable
-set background=dark
-colorscheme solarized
+
+	syntax enable
+	set background=dark
+	colorscheme solarized
 If you prefer a light background, you can change dark to light. It is
-possible to change the font and customizing the colors to your own
+possible to change the font and customize the colors to your own
 preference.
-More information at: https://github.com/altercation/vim-colors-solarized
+More info at: https://github.com/altercation/vim-colors-solarized
 Alternate color scheme: https://github.com/sjl/badwolf/
 Alternate color scheme: https://github.com/tomasr/molokai
 
@@ -134,10 +141,14 @@ plugin for anyone who hates searching through their code for one syntax
 error. Errors are identified only after everytime the file is saved.
 When highlighting a line of error, the error will be displayed at the
 bottom of the terminal. A line of error will be show with ">>" next
-to it. To install this plugin, navigate to your bundle directory. Type
-"git clone https://github.com/scrooloose/syntastic.git".
+to it.
+Installation:
+-------------
+	cd ~/.vim/bundle
+	git clone https://github.com/scrooloose/syntastic.git
 A new directory named syntastic should have been added.
-More information at: "https://github.com/scrooloose/syntastic"
+
+More info at: "https://github.com/scrooloose/syntastic"
 
 Plugin #5 - NERDcommenter:
 --------------------------
@@ -147,10 +158,14 @@ visual or normal mode. Type "\cc" to comment out the line highlighted
 by the cursor. Type "\ci" to toggle the state of the highlighted lines.
 Type "\cu" to uncomment the line that the cursor is highlighting. Type
 "\cs" to comment the highlighted using /* and */ rather than the
-ordinary //. To install this plugin, navigate to your bundle directory.
-Type: "git clone https://github.com/scrooloose/nerdcommenter.git".
+ordinary //.
+Instalation:
+------------
+	cd ~/.vim/bundle
+	git clone https://github.com/scrooloose/nerdcommenter.git
 A new directory named nerdcommenter should have been added.
-For more info: https://github.com/scrooloose/nerdcommenter
+
+More info at: https://github.com/scrooloose/nerdcommenter
 
 Plugin #6 - Surround:
 ---------------------
@@ -159,8 +174,10 @@ includes parentheses, brackets and more. Type
 cs[first character][second character] to replace occurences of the
 first character with the second character on the highlighted string of
 characters. Type "ds"" to remove the delimiters. You may also surround
-an entire line with parentheses by typing "yssb" or "yss)". To install
-this plugin, navigate to your bundle directory. Then type,
-"git clone git://github.com/tpope/vim-surround.git".
-a new directory named "surround" should be added.
-For more info: git://github.com/tpope/vim-surround
+an entire line with parentheses by typing "yssb" or "yss)". 
+Installation:
+-------------
+	cd ~/.vim/bundle
+	git clone git://github.com/tpope/vim-surround.git
+A new directory named "surround" should be added.
+More info at: git://github.com/tpope/vim-surround
