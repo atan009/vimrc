@@ -7,7 +7,7 @@ very different from what most users are used to, however learning
 it usually proves to quite convenient and efficient.
 TL;DR Vim is an upgrade for Vi :smile:
 Installation:
----
+-------------
     cd
     sudo apt-get install vim
 More info at: http://www.vim.org/about.php
@@ -15,22 +15,40 @@ More info at: http://www.vim.org/about.php
 
 Pathogen:
 ---------
-Git should already be installed by now. If it is not, type
-"sudo apt-get install git-core". Before installing any plugins, 
+Git should already be installed by now. If it is not,
+
+	cd
+	sudo apt-get install git-core
+
+Before installing any plugins, 
 we will need to include Pathogen. Pathogen makes installing plugins 
-easier. To begin, we need to be in the HOME directory. An easy way
-to do this it to type just "cd"in the terminal. In the HOME directory 
-create a new directory called ".vim". Go into this directory. Make 
-two new directories. The first should be named "autoload" which is 
+easier. To begin, we need to be in the HOME directory. In the HOME directory 
+create a new directory called ".vim" if it does not already exist. In the ".vim" directory,
+Make two new directories. The first should be named "autoload" which is 
 where Pathogen will be installed. The Second should be named 
 "bundle" which will be where the plugins are stored. Go back to the 
 HOME directory. type 
 "curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim".
+Installation:
+-------------
+	cd
+	mkdir .vim
+	cd .vim
+	mkdir autoload bundle
+	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+	
 If it was done properly, there should be a new directory inside the
 autoload directory. For the final steps, edit your .vimrc file,
-which should be in the HOME directory. On a new line add
+which should be in the HOME directory. If one does not exist, create a filed
+named ".vimrc" in your HOME directory. 
+
+	cd
+	touch .vimrc
+	
+On a new line in your .vimrc, add
 "execute pathogen#infect()".
-More information can be obtained at: https://github.com/tpope/vim-pathogen
+
+More info at: https://github.com/tpope/vim-pathogen
 
 Plugin #1 - NERDtree:
 ---------------------
