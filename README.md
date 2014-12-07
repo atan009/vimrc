@@ -50,22 +50,44 @@ On a new line in your .vimrc, add
 
 More info at: https://github.com/tpope/vim-pathogen
 
+#Important Note:
+From this point on, this tutorial will now assume:
+
+1. You have Pathogen installed correctly
+
+2. You have already made your .vimrc file
+
+3. Vim itself is installed
+
+4. Git is installed
+
 Plugin #1 - NERDtree:
 ---------------------
 NERDtree allows you to view your files and directories in the form
-of a tree. You can easily access your files by using the mouse this
-way. In your previously created bundle directory, type
-"git clone https://github.com/scrooloose/nerdtree.git". A new
-directory named "nerdtree" should have been created. Type "Vim",
-":Helptags" and ":help NERD_tree.txt". This will tell Vim where
+of a tree. You can easily access your files by using the mouse or
+arrow keys this way.
+
+Installation:
+-------------
+	cd ~/.vim/bundle
+    git clone https://github.com/scrooloose/nerdtree.git
+
+A new directory named "nerdtree" should have been created. Type "Vim",
+":Helptags" and ":help NERD_tree.txt" in this order.
+
+	Vim
+	:Helptags
+	:help NERD_tree.txt
+This will tell Vim where
 NERDtree is installed as well as tell you the many capabilities of
 NERDtree such as bookmarking directories/files. However, this tutorial
-will only cover how to view your files in a tree form :(. In this help
+will only cover how to view your files in a tree form :+1:. In this help
 page, type ":NERDTree *ONE OF YOUR ACTUAL DIRECTORIES". On the left,
 it should now display all the directories inside your chosen directory.
 You can use the arrow keys to navigate between files/directories and
 press ENTER to read into it. To close NERDtree type "NERDTreeClose".
 To open it again, type ":NERDTree *an EXISTING directory".
+
 More information can be obtained at: https://github.com/scrooloose/nerdtree
 
 Plugin #2 - SuperTab:
