@@ -1,4 +1,4 @@
-Vim:
+###Vim:
 Vim is a text editor. It is similar to Vi, but can be considered
 to have more features. Vim itself is also similar to an IDE. It is
 capable of compiling files and running executables as well. Vim is
@@ -9,7 +9,7 @@ sudo apt-get install vim
 More information can be obtained at: http://www.vim.org/about.php
 TL;DR Vim is an upgrade for Vi :).
 
-Pathogen:
+###Pathogen:
 Git should already be installed by now. If it is not, type
 "sudo apt-get install git-core". Before installing any plugins, 
 we will need to include Pathogen. Pathogen makes installing plugins 
@@ -27,7 +27,7 @@ which should be in the HOME directory. On a new line add
 "execute pathogen#infect()".
 More information can be obtained at: https://github.com/tpope/vim-pathogen
 
-Plugin #1 - NERDtree:
+###Plugin #1 - NERDtree:
 NERDtree allows you to view your files and directories in the form
 of a tree. You can easily access your files by using the mouse this
 way. In your previously created bundle directory, type
@@ -44,7 +44,7 @@ press ENTER to read into it. To close NERDtree type "NERDTreeClose".
 To open it again, type ":NERDTree *an EXISTING directory".
 More information can be obtained at: https://github.com/scrooloose/nerdtree
 
-Plugin #2 - SuperTab:
+###Plugin #2 - SuperTab:
 SuperTab aids the user in quickly typing in strings of characters, but only
 already existing ones. This is useful for users that enjoy automatic text
 filling. By typing a few characters and pressing <TAB> the word will be
@@ -56,7 +56,7 @@ go to your "bundle" directory. Type
 have been created name "supertab".
 More information can be obtained at: https://github.com/ervandew/supertab
 
-Plugin #3 - Solarized:
+###Plugin #3 - Solarized:
 Solarized changes the colorscheme of the vim editor. Often times, the
 default is not the best. It can be extremely irritable when you cannot
 differentiate between different types of files in vim as well as the
@@ -76,7 +76,7 @@ More information at: https://github.com/altercation/vim-colors-solarized
 Alternate color scheme: https://github.com/sjl/badwolf/
 Alternate color scheme: https://github.com/tomasr/molokai
 
-Plugin #4 - Syntastic:
+###Plugin #4 - Syntastic:
 Syntastic is a plugin which will save all programmers time. It detects
 for syntax errors BEFORE you even compile. As all programmers know, 
 these errors happen by mistake all the time and can be annoying after
@@ -90,7 +90,7 @@ to it. To install this plugin, navigate to your bundle directory. Type
 A new directory named syntastic should have been added.
 More information at: "https://github.com/scrooloose/syntastic"
 
-Plugin #5 - NERDcommenter:
+###Plugin #5 - NERDcommenter:
 NERDcommenter is a plugin that makes commenting easier. It also makes
 removing comments easier. All of the commands should be done in either
 visual or normal mode. Type "\cc" to comment out the line highlighted 
@@ -102,7 +102,7 @@ Type: "git clone https://github.com/scrooloose/nerdcommenter.git".
 A new directory named nerdcommenter should have been added.
 For more info: https://github.com/scrooloose/nerdcommenter
 
-Plugin #6 - Surround:
+###Plugin #6 - Surround:
 Surround aids the user in adding, changing or deleting mappings. This
 includes parentheses, brackets and more. Type
 cs[first character][second character] to replace occurences of the
