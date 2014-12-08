@@ -14,7 +14,7 @@ More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
 Vimrc :no_mouth::question:
 ----
-Vimrc is a file that allows user to configure personal setting in vim. It exists in the HOME directory in Unix.
+Vimrc is a file that allows user to configure personal setting in vim. It exists in the `$HOME` directory in Unix.
 
 	cd 
 	vim .vimrc
@@ -106,12 +106,12 @@ Git should already be installed by now. If it is not,
 
 Before installing any plugins, 
 we will need to include Pathogen. Pathogen makes installing plugins 
-easier. To begin, we need to be in the HOME directory. In the HOME directory 
+easier. To begin, we need to be in the `$HOME` directory. In the `$HOME` directory 
 create a new directory called ".vim" if it does not already exist. In the ".vim" directory,
 Make two new directories. The first should be named "autoload" which is 
 where Pathogen will be installed. The Second should be named 
 "bundle" which will be where the plugins are stored. Go back to the 
-HOME directory. type 
+`$HOME` directory. type 
 "curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim".
 Installation:
 -------------
@@ -125,8 +125,8 @@ Installation:
 
 If it was done properly, there should be a new directory inside the
 autoload directory. For the final steps, edit your .vimrc file,
-which should be in the HOME directory. If one does not exist, create a filed
-named ".vimrc" in your HOME directory. 
+which should be in the `$HOME` directory. If one does not exist, create a filed
+named ".vimrc" in your `$HOME` directory. 
 
 	cd
 	touch .vimrc
