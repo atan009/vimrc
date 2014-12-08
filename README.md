@@ -12,7 +12,7 @@ Installation:
     sudo apt-get install vim
 More info at: http://www.vim.org/about.php
 
-Vimrc :no_mounth::question:
+Vimrc :no_mouth::question:
 ----
 Vimrc is a file that allows user to configure personal setting in vim. It exists in the HOME directory in Unix.
 
@@ -20,6 +20,7 @@ Vimrc is a file that allows user to configure personal setting in vim. It exists
 	vim .vimrc
 
 Here are some common vimrc configuration:
+
 	"Tabs and Spaces
 	set shiftwidth=4 "1 tab == 4 spaces
 	set tabstop=4 "tabstop sets how many spaces the <TAB> character associate with
