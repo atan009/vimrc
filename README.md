@@ -95,6 +95,8 @@ You can use the arrow keys to navigate between files/directories and
 press ENTER to read into it. To close NERDtree type "NERDTreeClose".
 To open it again, type ":NERDTree *an EXISTING directory".
 
+![NT2](http://i.imgur.com/3OCe5YM.gif)
+
 More info at: https://github.com/scrooloose/nerdtree
 
 Plugin #2 - SuperTab:
