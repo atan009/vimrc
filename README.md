@@ -38,7 +38,7 @@ For Tabs and Spaces:
 
 For more detailed explaination, check on [The Vim Editor: Indenting Source Code] (http://vim.wikia.com/wiki/Indenting_source_code)
 
-For UI Config (User Interface Configuration)
+##For UI Config (User Interface Configuration):
 
 	set number "show line number (or "set nu")
 	set wildmenu "autocomplete for command line(filled up filename automatically)
@@ -57,7 +57,7 @@ For UI Config (User Interface Configuration)
 	set list "show invisible characters
 	set confirm "ask if user want to save file before exit
 	
-For Searching
+###For Searching:
 
 	set insearch "let vim search each characters as they are entered
 	set hlsearch "highlight matching search
@@ -66,7 +66,7 @@ For Searching
 
 For more detailed information on Searching in Vim, check on [The Vim Editor: Searching] (http://vim.wikia.com/wiki/Searching)
 
-For Folding
+####For Folding:
 
 	set foldenable "enable folds(show all folds)
 	set foldlevelstart=10 "since there could be nested folds
@@ -77,7 +77,7 @@ For Folding
 
 For more detailed information, check on [The Vim Editor: Folding] (http://vim.wikia.com/wiki/Folding)
 
-For Movement
+#####For Movement:
 	
 	set mouse=a "enable mouse support in console
 	set cursorline "underline current line that the cursor is on (or "set cu")
@@ -96,6 +96,7 @@ For Movement
 For tips on moverments in Vim, check on [Hacker's Blog: VIm Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
 
 For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
+
 Pathogen:
 ---------
 Git should already be installed by now. If it is not,
