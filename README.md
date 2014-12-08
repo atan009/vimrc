@@ -70,10 +70,10 @@ For Folding
 
 	set foldenable "enable folds(show all folds)
 	set foldlevelstart=10 "since there could be nested folds
-						"this setting can prevent the user from having too many folds
+						  "this setting can prevent the user from having too many folds
 	set foldmethod=indent "set the fold based on indentation
-					  	"can also be marker, manual, expr, syntax or diff 
-						"(check :help for more information)
+					  	  "can also be marker, manual, expr, syntax or diff 
+						  "(check :help for more information)
 
 For more detailed information, check on [The Vim Editor: Folding] (http://vim.wikia.com/wiki/Folding)
 
@@ -81,7 +81,8 @@ For Movement
 	
 	set mouse=a "enable mouse support in console
 	set cursorline "underline current line that the cursor is on (or "set cu")
-	hi CursorLine term=none cterm=none ctermbg=3 "adjust color, have highlight instead of underline
+	hi CursorLine term=none cterm=none ctermbg=3 
+						  "adjust color, have highlight instead of underline
 	nnormap j gj "if there is a long line wrapped up 
 	nnormap k gk "j and k will not skipped the wrapped up line
 	nnormap BB ^ "in Vim, ^ and $ are jump to the beginning and end of line
@@ -93,6 +94,7 @@ For Movement
 	set sidescrolloff=5 "keep at least 5 lines left/right when side scrolling
 
 For tips on moverments in Vim, check on [Hacker's Blog: VIm Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
+
 For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
 Pathogen:
 ---------
