@@ -69,8 +69,11 @@ For more detailed information on Searching in Vim, check on [The Vim Editor: Sea
 For Folding
 
 	set foldenable "enable folds(show all folds)
-	set foldlevelstart=10 "since there could be nested folds, this setting can prevent the user from having too many folds
-	set foldmethod=indent "set the fold based on indentation, can also be marker, manual, expr, syntax or diff (check :help for more information)
+	set foldlevelstart=10 "since there could be nested folds
+						  "this setting can prevent the user from having too many folds
+	set foldmethod=indent "set the fold based on indentation
+					  	  "can also be marker, manual, expr, syntax or diff 
+						  "(check :help for more information)
 
 For more detailed information, check on [The Vim Editor: Folding] (http://vim.wikia.com/wiki/Folding)
 
@@ -78,20 +81,21 @@ For Movement
 	
 	set mouse=a "enable mouse support in console
 	set cursorline "underline current line that the cursor is on (or "set cu")
-	hi CursorLine term=none cterm=none ctermbg=3 "adjust color, have highlight instead of underline
-	"for more color, go on [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
+	hi CursorLine term=none cterm=none ctermbg=3 
+						  "adjust color, have highlight instead of underline
 	nnormap j gj "if there is a long line wrapped up 
 	nnormap k gk "j and k will not skipped the wrapped up line
-	nnormap BB ^ "in Vim, ^ and $ are jump to the beginning and end of line
-	nnormap EE $ "these two set BB and EE to ^ and $ (BB and EE can be anything)
-	nnormap gV `[v`] "selects the block of characters that was in INSERT mode last time
-	map <space> / "set <space> to /(search)
-	map <c-space> ? "set ctrl + <space> to ?(backwards search)
 	set scrolloff=5 "keep at least 5 lines above/below when scrolling
 	set sidescrolloff=5 "keep at least 5 lines left/right when side scrolling
+	nnormap BB ^ "in Vim, ^ and $ are jump to the beginning and end of line
+	nnormap EE $ "these two set BB and EE to ^ and $ (BB and EE can be anything)
+	map <space> / "set <space> to /(search)
+	map <c-space> ? "set ctrl + <space> to ?(backwards search)
+	nnormap gV `[v`] "selects the block of characters that was in INSERT mode last time
 
 For tips on moverments in Vim, check on [Hacker's Blog: VIm Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
 
+For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
 Pathogen:
 ---------
 Git should already be installed by now. If it is not,
@@ -225,7 +229,7 @@ preference.
 More info at: [Github altercation/vim-colors-solarized] (https://github.com/altercation/vim-colors-solarized)
 
 Alternate color scheme: [Github sjl/badwolf] (https://github.com/sjl/badwolf/)
-						[Github tomasr/molokai] (https://github.com/tomasr/molokai)
+					,[Github tomasr/molokai] (https://github.com/tomasr/molokai)
 
 Plugin #4 - Syntastic:
 ----------------------
