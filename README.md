@@ -36,7 +36,7 @@ For Tabs and Spaces:
 	set copyindent "use existing indents for new indents
 	set preserveindent "save as much indent structure as possible
 
-For more detailed explaination, check on http://vim.wikia.com/wiki/Indenting_source_code
+For more detailed explaination, check on [The Vim Editor: Indenting Source Code] (http://vim.wikia.com/wiki/Indenting_source_code)
 
 For UI Config (User Interface Configuration)
 
@@ -57,7 +57,14 @@ For UI Config (User Interface Configuration)
 	set list "show invisible characters
 	set confirm "ask if user want to save file before exit
 	
+For Searching
 
+	set insearch "let vim search each characters as they are entered
+	set hlsearch "highlight matching search
+	set smartcase "let vim be smart about the case when searching
+	map <silent> <leader><cr> :noh<cr> "disable highlight with <cr>
+
+For more detailed information on Searching in Vim, check on [The Vim Editor: Searching] (http://vim.wikia.com/wiki/Searching)
 
 Pathogen:
 ---------
