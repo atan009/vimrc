@@ -258,7 +258,12 @@ includes parentheses, brackets and more. Type
 cs[first character][second character] to replace occurences of the
 first character with the second character on the highlighted string of
 characters. Type "ds"" to remove the delimiters. You may also surround
-an entire line with parentheses by typing "yssb" or "yss)". 
+an entire line with parentheses by typing "yssb" or "yss)".
+
+![Surround1](http://i.imgur.com/7BjSTfR.gif) ![Surround2](http://i.imgur.com/upeOBA1.gif)
+
+![Surround3](http://i.imgur.com/Ep8zeqz.gif) ![Surround4](http://i.imgur.com/VdIhp6T.gif)
+
 Installation:
 -------------
 	cd ~/.vim/bundle
