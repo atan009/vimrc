@@ -67,6 +67,7 @@ For Searching
 For more detailed information on Searching in Vim, check on [The Vim Editor: Searching] (http://vim.wikia.com/wiki/Searching)
 
 For Folding
+
 	set foldenable "enable folds(show all folds)
 	set foldlevelstart=10 "since there could be nested folds, this setting can prevent the user from having too many folds
 	set foldmethod=indent "set the fold based on indentation, can also be marker, manual, expr, syntax or diff (check :help for more information)
