@@ -113,6 +113,8 @@ Installation:
     git clone https://github.com/ervandew/supertab.git
 A new directory should have been created named "supertab".
 
+![ST1](http://i.imgur.com/i12YWak.gif)
+
 More info at: https://github.com/ervandew/supertab
 
 Plugin #3 - Solarized:
