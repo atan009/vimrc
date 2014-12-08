@@ -21,7 +21,7 @@ Vimrc is a file that allows user to configure personal setting in vim. It exists
 
 Here are some common vimrc configuration:
 
-For Tabs and Spaces:
+####For Tabs and Spaces:
 
 	set shiftwidth=4 "1 tab == 4 spaces
 	set tabstop=4 "tabstop sets how many spaces the <TAB> character associate with
@@ -38,7 +38,7 @@ For Tabs and Spaces:
 
 For more detailed explaination, check on [The Vim Editor: Indenting Source Code] (http://vim.wikia.com/wiki/Indenting_source_code)
 
-##For UI Config (User Interface Configuration):
+####For UI Config (User Interface Configuration):
 
 	set number "show line number (or "set nu")
 	set wildmenu "autocomplete for command line(filled up filename automatically)
@@ -57,7 +57,7 @@ For more detailed explaination, check on [The Vim Editor: Indenting Source Code]
 	set list "show invisible characters
 	set confirm "ask if user want to save file before exit
 	
-###For Searching:
+####For Searching:
 
 	set insearch "let vim search each characters as they are entered
 	set hlsearch "highlight matching search
@@ -77,7 +77,7 @@ For more detailed information on Searching in Vim, check on [The Vim Editor: Sea
 
 For more detailed information, check on [The Vim Editor: Folding] (http://vim.wikia.com/wiki/Folding)
 
-#####For Movement:
+####For Movement:
 	
 	set mouse=a "enable mouse support in console
 	set cursorline "underline current line that the cursor is on (or "set cu")
@@ -93,7 +93,7 @@ For more detailed information, check on [The Vim Editor: Folding] (http://vim.wi
 	map <c-space> ? "set ctrl + <space> to ?(backwards search)
 	nnormap gV `[v`] "selects the block of characters that was in INSERT mode last time
 
-For tips on moverments in Vim, check on [Hacker's Blog: VIm Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
+For tips on moverments in Vim, check on [Hacker's Blog: Vim Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
 
 For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
 
