@@ -221,6 +221,9 @@ by the cursor. Type "\ci" to toggle the state of the highlighted lines.
 Type "\cu" to uncomment the line that the cursor is highlighting. Type
 "\cs" to comment the highlighted using /* and */ rather than the
 ordinary //.
+
+![NC1](http://i.imgur.com/BU8Ffmg.gif)
+
 Installation:
 ------------
 	cd ~/.vim/bundle
