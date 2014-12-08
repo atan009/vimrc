@@ -37,6 +37,8 @@ Installation:
 	mkdir autoload bundle
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 	
+![Pathogen](http://i.imgur.com/fUVGsRy.gif)
+
 If it was done properly, there should be a new directory inside the
 autoload directory. For the final steps, edit your .vimrc file,
 which should be in the HOME directory. If one does not exist, create a filed
