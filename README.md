@@ -159,7 +159,7 @@ by the cursor. Type "\ci" to toggle the state of the highlighted lines.
 Type "\cu" to uncomment the line that the cursor is highlighting. Type
 "\cs" to comment the highlighted using /* and */ rather than the
 ordinary //.
-Instalation:
+Installation:
 ------------
 	cd ~/.vim/bundle
 	git clone https://github.com/scrooloose/nerdcommenter.git
