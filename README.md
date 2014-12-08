@@ -140,13 +140,8 @@ For a dark background type:
 If you prefer a light background, you can change dark to light. It is
 possible to change the font and customize the colors to your own
 preference.
-
-![Solarized2](http://i.imgur.com/HRqwlqz.png) ![Solarized3](http://i.imgur.com/sQKfCbm.png)
-
 More info at: https://github.com/altercation/vim-colors-solarized
-
 Alternate color scheme: https://github.com/sjl/badwolf/
-
 Alternate color scheme: https://github.com/tomasr/molokai
 
 Plugin #4 - Syntastic:
@@ -160,6 +155,9 @@ error. Errors are identified only after everytime the file is saved.
 When highlighting a line of error, the error will be displayed at the
 bottom of the terminal. A line of error will be show with ">>" next
 to it.
+
+![Syntastic](http://i.imgur.com/LPHf6U7.gif)
+
 Installation:
 -------------
 	cd ~/.vim/bundle
