@@ -50,6 +50,8 @@ named ".vimrc" in your HOME directory.
 On a new line in your .vimrc, add
 "execute pathogen#infect()".
 
+![Pathogen2](http://i.imgur.com/iar6r0W.gif)
+
 More info at: https://github.com/tpope/vim-pathogen
 
 #Important Note:
@@ -80,6 +82,9 @@ A new directory named "nerdtree" should have been created. Type "Vim",
 	Vim
 	:Helptags
 	:help NERD_tree.txt
+	
+![NT1](http://i.imgur.com/lLW7O1i.gif)
+
 This will tell Vim where
 NERDtree is installed as well as tell you the many capabilities of
 NERDtree such as bookmarking directories/files. However, this tutorial
