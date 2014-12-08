@@ -85,13 +85,13 @@ For Movement
 						  "adjust color, have highlight instead of underline
 	nnormap j gj "if there is a long line wrapped up 
 	nnormap k gk "j and k will not skipped the wrapped up line
-	nnormap BB ^ "in Vim, ^ and $ are jump to the beginning and end of line
-	nnormap EE $ "these two set BB and EE to ^ and $ (BB and EE can be anything)
-	nnormap gV `[v`] "selects the block of characters that was in INSERT mode last time
-	map <space> / "set <space> to /(search)
-	map <c-space> ? "set ctrl + <space> to ?(backwards search)
 	set scrolloff=5 "keep at least 5 lines above/below when scrolling
 	set sidescrolloff=5 "keep at least 5 lines left/right when side scrolling
+	nnormap BB ^ "in Vim, ^ and $ are jump to the beginning and end of line
+	nnormap EE $ "these two set BB and EE to ^ and $ (BB and EE can be anything)
+	map <space> / "set <space> to /(search)
+	map <c-space> ? "set ctrl + <space> to ?(backwards search)
+	nnormap gV `[v`] "selects the block of characters that was in INSERT mode last time
 
 For tips on moverments in Vim, check on [Hacker's Blog: VIm Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
 
