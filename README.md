@@ -1,25 +1,31 @@
-Vim: :neckbeard::zzz:
+`Vim`: :neckbeard::zzz:
 ----
-Vim is a text editor. It is similar to Vi, but can be considered
-to have more features. Vim itself is also similar to an IDE. It is
-capable of compiling files and running executables as well. Vim is
+`Vim` is a text editor. It is similar to `Vi`, but can be considered
+to have more features. `Vim` itself is also similar to an IDE. It is
+capable of compiling files and running executables as well. `Vim` is
 very different from what most users are used to, however learning
 it usually proves to quite convenient and efficient.
-TL;DR Vim is an upgrade for Vi :smile:
+TL;DR `Vim` is an upgrade for `Vi` :smile:
 Installation:
 -------------
     cd
     sudo apt-get install vim
 More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
-Vimrc :no_mouth::question:
+`Vimrc` :no_mouth::question:
 ----
-Vimrc is a file that allows user to configure personal setting in vim. It exists in the `$HOME` directory in Unix.
+`Vimrc` is a file that allows user to configure personal setting in `vim`. It exists in the `$HOME` directory in Unix. If one does not exist, create a filed named "`.vimrc`" in your `$HOME` directory. 
+
+	cd
+	touch .vimrc
+	
 
 	cd 
 	vim .vimrc
 
-Here are some common vimrc configuration:
+When the file first opened, there should be nothing in your `.vimrc` file. You can add any configuration you want to it. 
+
+Here are some common `vimrc` configuration:
 
 ####For Tabs and Spaces:
 
@@ -36,7 +42,7 @@ Here are some common vimrc configuration:
 	set copyindent "use existing indents for new indents
 	set preserveindent "save as much indent structure as possible
 
-For more detailed explaination, check on [The Vim Editor: Indenting Source Code] (http://vim.wikia.com/wiki/Indenting_source_code)
+For more detailed explaination on tabs, check on [The Vim Editor: Indenting Source Code] (http://vim.wikia.com/wiki/Indenting_source_code)
 
 ####For UI Config (User Interface Configuration):
 
@@ -64,7 +70,7 @@ For more detailed explaination, check on [The Vim Editor: Indenting Source Code]
 	set smartcase "let vim be smart about the case when searching
 	map <silent> <leader><cr> :noh<cr> "disable highlight with <cr>
 
-For more detailed information on Searching in Vim, check on [The Vim Editor: Searching] (http://vim.wikia.com/wiki/Searching)
+For more explanation and setting on Searching in `Vim`, check on [The Vim Editor: Searching] (http://vim.wikia.com/wiki/Searching)
 
 ####For Folding:
 
@@ -93,24 +99,24 @@ For more detailed information, check on [The Vim Editor: Folding] (http://vim.wi
 	map <c-space> ? "set ctrl + <space> to ?(backwards search)
 	nnormap gV `[v`] "selects the block of characters that was in INSERT mode last time
 
-For tips on moverments in Vim, check on [Hacker's Blog: Vim Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
+For tips on moverments in `Vim`, check on [Hacker's Blog: Vim Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
 
 For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
 
 Pathogen:
 ---------
-Git should already be installed by now. If it is not,
+`Git` should already be installed by now. If it is not,
 
 	cd
 	sudo apt-get install git-core
 
 Before installing any plugins, 
-we will need to include Pathogen. Pathogen makes installing plugins 
+we will need to include `Pathogen`. `Pathogen` makes installing plugins 
 easier. To begin, we need to be in the `$HOME` directory. In the `$HOME` directory 
-create a new directory called ".vim" if it does not already exist. In the ".vim" directory,
-Make two new directories. The first should be named "autoload" which is 
-where Pathogen will be installed. The Second should be named 
-"bundle" which will be where the plugins are stored. Go back to the 
+create a new directory called "`.vim`" if it does not already exist. In the "`.vim`" directory,
+Make two new directories. The first should be named "`autoload`" which is 
+where `Pathogen` will be installed. The Second should be named 
+"`bundle`" which will be where the plugins are stored. Go back to the 
 `$HOME` directory. type 
 "curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim".
 Installation:
@@ -124,14 +130,8 @@ Installation:
 ![Pathogen](http://i.imgur.com/fUVGsRy.gif)
 
 If it was done properly, there should be a new directory inside the
-autoload directory. For the final steps, edit your .vimrc file,
-which should be in the `$HOME` directory. If one does not exist, create a filed
-named ".vimrc" in your `$HOME` directory. 
-
-	cd
-	touch .vimrc
-	
-On a new line in your .vimrc, add
+autoload directory. For the final steps, edit your `.vimrc` file.
+On a new line in your `.vimrc`, add
 "execute pathogen#infect()".
 
 ![Pathogen2](http://i.imgur.com/iar6r0W.gif)
@@ -141,13 +141,13 @@ More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen
 #Important Note:
 From this point on, this tutorial will now assume:
 
-1. You have Pathogen installed correctly
+1. You have `Pathogen` installed correctly
 
-2. You have already made your .vimrc file
+2. You have already made your `.vimrc` file
 
-3. Vim itself is installed
+3. `Vim` itself is installed
 
-4. Git is installed
+4. `Git` is installed
 
 Plugin #1 - NERDtree:
 ---------------------
