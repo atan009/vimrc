@@ -10,7 +10,7 @@ Installation:
 -------------
     cd
     sudo apt-get install vim
-More info at: http://www.vim.org/about.php
+More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
 Vimrc :no_mouth::question:
 ----
@@ -105,7 +105,7 @@ On a new line in your .vimrc, add
 
 ![Pathogen2](http://i.imgur.com/iar6r0W.gif)
 
-More info at: https://github.com/tpope/vim-pathogen
+More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen)
 
 #Important Note:
 From this point on, this tutorial will now assume:
@@ -150,7 +150,7 @@ To open it again, type ":NERDTree *an EXISTING directory".
 
 ![NT2](http://i.imgur.com/3OCe5YM.gif)
 
-More info at: https://github.com/scrooloose/nerdtree
+More info at: [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
 
 Plugin #2 - SuperTab:
 ------------------------
@@ -168,7 +168,7 @@ A new directory should have been created named "supertab".
 
 ![ST1](http://i.imgur.com/i12YWak.gif)
 
-More info at: https://github.com/ervandew/supertab
+More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
 Plugin #3 - Solarized:
 ----------------------
@@ -193,9 +193,13 @@ For a dark background type:
 If you prefer a light background, you can change dark to light. It is
 possible to change the font and customize the colors to your own
 preference.
-More info at: https://github.com/altercation/vim-colors-solarized
-Alternate color scheme: https://github.com/sjl/badwolf/
-Alternate color scheme: https://github.com/tomasr/molokai
+
+![Solarized2](http://i.imgur.com/HRqwlqz.png) ![Solarized3](http://i.imgur.com/sQKfCbm.png)
+
+More info at: [Github altercation/vim-colors-solarized] (https://github.com/altercation/vim-colors-solarized)
+
+Alternate color scheme: [Github sjl/badwolf] (https://github.com/sjl/badwolf/)
+						[Github tomasr/molokai] (https://github.com/tomasr/molokai)
 
 Plugin #4 - Syntastic:
 ----------------------
@@ -217,7 +221,7 @@ Installation:
 	git clone https://github.com/scrooloose/syntastic.git
 A new directory named syntastic should have been added.
 
-More info at: "https://github.com/scrooloose/syntastic"
+More info at: [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
 
 Plugin #5 - NERDcommenter:
 --------------------------
@@ -237,7 +241,7 @@ Installation:
 	git clone https://github.com/scrooloose/nerdcommenter.git
 A new directory named nerdcommenter should have been added.
 
-More info at: https://github.com/scrooloose/nerdcommenter
+More info at: [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 
 Plugin #6 - Surround:
 ---------------------
@@ -253,4 +257,4 @@ Installation:
 	git clone git://github.com/tpope/vim-surround.git
 A new directory named "surround" should be added.
 
-More info at: https://github.com/tpope/vim-surround
+More info at: [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
