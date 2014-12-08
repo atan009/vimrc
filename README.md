@@ -254,7 +254,7 @@ an entire line with parentheses by typing "yssb" or "yss)".
 Installation:
 -------------
 	cd ~/.vim/bundle
-	git clone git://github.com/tpope/vim-surround.git
+	git clone https://github.com/tpope/vim-surround.git
 A new directory named "surround" should be added.
 
 More info at: [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
