@@ -12,6 +12,29 @@ Installation:
     sudo apt-get install vim
 More info at: http://www.vim.org/about.php
 
+Vimrc :no_mouth::question:
+----
+Vimrc is a file that allows user to configure personal setting in vim. It exists in the HOME directory in Unix.
+
+	cd 
+	vim .vimrc
+
+Here are some common vimrc configuration:
+
+	"Tabs and Spaces
+	set shiftwidth=4 "1 tab == 4 spaces
+	set tabstop=4 "tabstop sets how many spaces the <TAB> character associate with
+	set softtabstop=4 "use space instead of tab
+	set expandtab "use space instead of tab
+	set smarttab "let Vim be smart about tab
+	set lbr "set line break
+	set tw=500 "set the line break on 500 characters (continue last one
+	set ai "make auto indent  (or "set autoindent")
+	set si "make smart indent
+	set wrap "allow wrap line
+	set copyindent "use existing indents for new indents
+	set preserveindent "save as much indent structure as possible
+
 
 Pathogen:
 ---------
