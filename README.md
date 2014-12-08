@@ -180,4 +180,5 @@ Installation:
 	cd ~/.vim/bundle
 	git clone git://github.com/tpope/vim-surround.git
 A new directory named "surround" should be added.
-More info at: git://github.com/tpope/vim-surround
+
+More info at: https://github.com/tpope/vim-surround
