@@ -1,4 +1,4 @@
-Vim:
+Vim: :)
 ----
 Vim is a text editor. It is similar to Vi, but can be considered
 to have more features. Vim itself is also similar to an IDE. It is
