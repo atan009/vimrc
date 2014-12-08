@@ -135,6 +135,8 @@ For a dark background type:
 	syntax enable
 	set background=dark
 	colorscheme solarized
+![Solarized1](http://i.imgur.com/3vwzhsW.png)
+
 If you prefer a light background, you can change dark to light. It is
 possible to change the font and customize the colors to your own
 preference.
