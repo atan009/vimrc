@@ -21,7 +21,8 @@ Vimrc is a file that allows user to configure personal setting in vim. It exists
 
 Here are some common vimrc configuration:
 
-	"Tabs and Spaces
+For Tabs and Spaces:
+
 	set shiftwidth=4 "1 tab == 4 spaces
 	set tabstop=4 "tabstop sets how many spaces the <TAB> character associate with
 	set softtabstop=4 "use space instead of tab
@@ -34,6 +35,28 @@ Here are some common vimrc configuration:
 	set wrap "allow wrap line
 	set copyindent "use existing indents for new indents
 	set preserveindent "save as much indent structure as possible
+
+For more detailed explaination, check on http://vim.wikia.com/wiki/Indenting_source_code
+
+For UI Config (User Interface Configuration)
+
+	set number "show line number (or "set nu")
+	set wildmenu "autocomplete for command line(filled up filename automatically)
+	set lazydraw "disable redraw and get a faster macro
+	set showmatch "highlight matching [{()}] when the cursor is over
+	set mat=2 "for showmatch, set how many tenth of second it blinks
+	set history=700 "set the lines of history Vim remembers
+	set ruler "shows current position
+	set cmdheight=2 "set the height of the command bar
+	set backspace=eol, start, indent "configure backspace to its default setting
+	set whichwrap+=<.>,h,l "(continue set backspace
+	set magic "turn on magic when using refular expressions
+	set autochdir "automatically cd into the directory the file is in
+	set undolevels=1000 "let vim allow 1000 undos
+	set noerrobells "disable error bells
+	set list "show invisible characters
+	set confirm "ask if user want to save file before exit
+	
 
 
 Pathogen:
