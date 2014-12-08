@@ -229,7 +229,7 @@ Type "\cu" to uncomment the line that the cursor is highlighting. Type
 "\cs" to comment the highlighted using /* and */ rather than the
 ordinary //.
 
-![NC1](http://i.imgur.com/BU8Ffmg.gif)
+![NC1](http://i.imgur.com/BU8Ffmg.gif) ![NC2](http://i.imgur.com/C7ZMtP7.gif)
 
 Installation:
 ------------
