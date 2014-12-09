@@ -18,14 +18,11 @@ More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
 	cd
 	touch .vimrc
-	
-
-	cd 
 	vim .vimrc
 
 When the file first opened, there should be nothing in your `.vimrc` file. You can add any configuration you want to it. 
 
-Here are some common `vimrc` configuration:
+Here are some common `.vimrc` configuration:
 
 ####For Tabs and Spaces:
 
@@ -50,6 +47,7 @@ For more detailed explaination on tabs, check on [The Vim Editor: Indenting Sour
 	set wildmenu "autocomplete for command line(filled up filename automatically)
 	set lazydraw "disable redraw and get a faster macro
 	set showmatch "highlight matching [{()}] when the cursor is over
+	set showcmd "display incomplete command in the lower right corner of the console
 	set mat=2 "for showmatch, set how many tenth of second it blinks
 	set history=700 "set the lines of history Vim remembers
 	set ruler "shows current position
@@ -62,6 +60,9 @@ For more detailed explaination on tabs, check on [The Vim Editor: Indenting Sour
 	set noerrobells "disable error bells
 	set list "show invisible characters
 	set confirm "ask if user want to save file before exit
+	syntax enable "enable syntax highlighting 
+	colorscheme desert 
+	set background dark "initialize colorscheme and set the background dark
 	
 ####For Searching:
 
@@ -103,7 +104,28 @@ For tips on moverments in `Vim`, check on [Hacker's Blog: Vim Movements] (http:/
 
 For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
 
-Pathogen:
+####For Typing and Spell-Checking:
+	
+	if version >= 700
+		set spl=en spell "do spell check
+		set nospell "turn it off afterward
+	endif
+	"if user wants to spell-check only a certain size of the file 
+	"i.e. a file with more than 700 character
+	setlocal spell spelllang=en_us "set the spell-check to US English
+	set complete+=kspell "turn on word completion
+
+There is also a plugin that does spell-check for you, these are just some simple tips how you can get it fast.
+
+For more explanation on `vim`'s spell-check function, go to [Vim Documentation: Spell] (http://vimdoc.sourceforge.net/htmldoc/spell.html)
+
+Other fanicer `.vimrc` configuration on spell-check, go to [Throughtrobot: Vim Spell-Checking] (http://robots.throughtbot.com/vim-spell-checking)
+
+`Plugin`:
+-------
+Earlier we mentioned `plugin` when we talked about color and spell-checking in `.vimrc` configuration. What is `plugin`? It is a `Vim` script file that will load automatically when `Vim` starts. Most plugins are usefule features that people created to make Vim more user-friendly. Here we will introduce some plugins that are useful.
+
+###Pathogen:
 ---------
 `Git` should already be installed by now. If it is not,
 
@@ -149,9 +171,9 @@ From this point on, this tutorial will now assume:
 
 4. `Git` is installed
 
-Plugin #1 - NERDtree:
+Plugin #1 - `NERDtree`:
 ---------------------
-NERDtree allows you to view your files and directories in the form
+`NERDtree` allows you to view your files and directories in the form
 of a tree. You can easily access your files by using the mouse or
 arrow keys this way.
 
@@ -160,34 +182,34 @@ Installation:
 	cd ~/.vim/bundle
     git clone https://github.com/scrooloose/nerdtree.git
 
-A new directory named "nerdtree" should have been created. Type "Vim",
-":Helptags" and ":help NERD_tree.txt" in this order.
+A new directory named "`nerdtree`" should have been created. Type "`vim`",
+"`:Helptags`" and "`:help NERD_tree.txt`" in this order.
 
-	Vim
+	vim
 	:Helptags
 	:help NERD_tree.txt
 	
 ![NT1](http://i.imgur.com/lLW7O1i.gif)
 
-This will tell Vim where
-NERDtree is installed as well as tell you the many capabilities of
-NERDtree such as bookmarking directories/files. However, this tutorial
+This will tell `Vim` where
+`NERDtree` is installed as well as tell you the many capabilities of
+`NERDtree` such as bookmarking directories/files. However, this tutorial
 will only cover how to view your files in a tree form :+1:. In this help
-page, type ":NERDTree *ONE OF YOUR ACTUAL DIRECTORIES". On the left,
+page, type "`:NERDTree *ONE OF YOUR ACTUAL DIRECTORIES`". On the left,
 it should now display all the directories inside your chosen directory.
 You can use the arrow keys to navigate between files/directories and
-press ENTER to read into it. To close NERDtree type "NERDTreeClose".
-To open it again, type ":NERDTree *an EXISTING directory".
+press ENTER to read into it. To close NERDtree type "`NERDTreeClose`".
+To open it again, type "`:NERDTree *an EXISTING directory`".
 
 ![NT2](http://i.imgur.com/3OCe5YM.gif)
 
 More info at: [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
 
-Plugin #2 - SuperTab:
+Plugin #2 - `SuperTab`:
 ------------------------
-SuperTab aids the user in quickly typing in strings of characters, but only
+`SuperTab` aids the user in quickly typing in strings of characters, but only
 already existing ones. This is useful for users that enjoy automatic text
-filling. By typing a few characters and pressing <TAB> the word will be
+filling. By typing a few characters and pressing `<TAB>` the word will be
 filled automatically, unless there is more than one existing string with
 the same characters typed. In this situation, a list of words will be
 shown in which the user can choose the correct one.
@@ -195,7 +217,7 @@ Installation:
 -------------
 	cd ~/.vim/bundle
     git clone https://github.com/ervandew/supertab.git
-A new directory should have been created named "supertab".
+A new directory should have been created named "`supertab`".
 
 ![ST1](http://i.imgur.com/i12YWak.gif)
 
@@ -203,17 +225,17 @@ More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
 Plugin #3 - Solarized:
 ----------------------
-Solarized changes the colorscheme of the vim editor. Often times, the
+`Solarized` changes the colorscheme of the `vim` editor. Often times, the
 default is not the best. It can be extremely irritable when you cannot
-differentiate between different types of files in vim as well as the
+differentiate between different types of files in `vim` as well as the
 variety of things within source code. 
 Installation:
 --------------
 	cd ~/.vim/bundle
 	git clone https://github.com/altercation/vim-colors-solarized.git
 
-A new directory named "vim-colors-solarized" should have been added.
-Now, we will need to modify our .vimrc depending on the style we like.
+A new directory named "`vim-colors-solarized`" should have been added.
+Now, we will need to modify our `.vimrc` depending on the style we like.
 For a dark background type:
 
 	syntax enable
@@ -230,18 +252,18 @@ preference.
 More info at: [Github altercation/vim-colors-solarized] (https://github.com/altercation/vim-colors-solarized)
 
 Alternate color scheme: [Github sjl/badwolf] (https://github.com/sjl/badwolf/)
-					,[Github tomasr/molokai] (https://github.com/tomasr/molokai)
+					, [Github tomasr/molokai] (https://github.com/tomasr/molokai)
 
-Plugin #4 - Syntastic:
+Plugin #4 - `Syntastic`:
 ----------------------
-Syntastic is a plugin which will save all programmers time. It detects
+`Syntastic` is a plugin which will save all programmers time. It detects
 for syntax errors BEFORE you even compile. As all programmers know, 
 these errors happen by mistake all the time and can be annoying after
 receiving those thousands of other logic errors. A highly recommended
 plugin for anyone who hates searching through their code for one syntax
 error. Errors are identified only after everytime the file is saved.
 When highlighting a line of error, the error will be displayed at the
-bottom of the terminal. A line of error will be show with ">>" next
+bottom of the terminal. A line of error will be show with "`>>`" next
 to it.
 
 ![Syntastic](http://i.imgur.com/LPHf6U7.gif)
@@ -254,15 +276,15 @@ A new directory named syntastic should have been added.
 
 More info at: [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
 
-Plugin #5 - NERDcommenter:
+Plugin #5 - `NERDcommenter`:
 --------------------------
-NERDcommenter is a plugin that makes commenting easier. It also makes
+`NERDcommenter` is a plugin that makes commenting easier. It also makes
 removing comments easier. All of the commands should be done in either
-visual or normal mode. Type "\cc" to comment out the line highlighted 
-by the cursor. Type "\ci" to toggle the state of the highlighted lines.
-Type "\cu" to uncomment the line that the cursor is highlighting. Type
-"\cs" to comment the highlighted using /* and */ rather than the
-ordinary //.
+visual or normal mode. Type "`\cc`" to comment out the line highlighted 
+by the cursor. Type "`\ci`" to toggle the state of the highlighted lines.
+Type "`\cu`" to uncomment the line that the cursor is highlighting. Type
+"`\cs`" to comment the highlighted using `/*` and `*/` rather than the
+ordinary `//`.
 
 ![NC1](http://i.imgur.com/BU8Ffmg.gif) ![NC2](http://i.imgur.com/C7ZMtP7.gif)
 
@@ -274,14 +296,14 @@ A new directory named nerdcommenter should have been added.
 
 More info at: [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 
-Plugin #6 - Surround:
+Plugin #6 - `Surround`:
 ---------------------
-Surround aids the user in adding, changing or deleting mappings. This
+`Surround` aids the user in adding, changing or deleting mappings. This
 includes parentheses, brackets and more. Type
-cs[first character][second character] to replace occurences of the
+`cs[first character][second character]` to replace occurences of the
 first character with the second character on the highlighted string of
-characters. Type "ds"" to remove the delimiters. You may also surround
-an entire line with parentheses by typing "yssb" or "yss)".
+characters. Type "`ds"`" to remove the delimiters. You may also surround
+an entire line with parentheses by typing "`yssb`" or "`yss)`".
 
 ![Surround1](http://i.imgur.com/7BjSTfR.gif) ![Surround2](http://i.imgur.com/upeOBA1.gif)
 
@@ -291,6 +313,6 @@ Installation:
 -------------
 	cd ~/.vim/bundle
 	git clone https://github.com/tpope/vim-surround.git
-A new directory named "surround" should be added.
+A new directory named "`surround`" should be added.
 
 More info at: [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
