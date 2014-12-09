@@ -115,7 +115,9 @@ For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm
 	set complete+=kspell "turn on word completion
 
 There is also a plugin that does spell-check for you, these are just some simple tips how you can get it fast.
+
 For more explanation on `vim`'s spell-check function, go to [Vim Documentation: Spell] (http://vimdoc.sourceforge.net/htmldoc/spell.html)
+
 Other fanicer `.vimrc` configuration on spell-check, go to [Throughtrobot: Vim Spell-Checking] (http://robots.throughtbot.com/vim-spell-checking)
 
 Pathogen:
