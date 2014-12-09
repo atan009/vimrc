@@ -18,14 +18,11 @@ More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
 	cd
 	touch .vimrc
-	
-
-	cd 
 	vim .vimrc
 
 When the file first opened, there should be nothing in your `.vimrc` file. You can add any configuration you want to it. 
 
-Here are some common `vimrc` configuration:
+Here are some common `.vimrc` configuration:
 
 ####For Tabs and Spaces:
 
@@ -62,6 +59,9 @@ For more detailed explaination on tabs, check on [The Vim Editor: Indenting Sour
 	set noerrobells "disable error bells
 	set list "show invisible characters
 	set confirm "ask if user want to save file before exit
+	syntax enable "enable syntax highlighting
+	colorscheme desert 
+	set background dark "initialize colorscheme and set the background dark
 	
 ####For Searching:
 
@@ -102,6 +102,21 @@ For more detailed information, check on [The Vim Editor: Folding] (http://vim.wi
 For tips on moverments in `Vim`, check on [Hacker's Blog: Vim Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
 
 For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
+
+####For Typing and Spell-Checking:
+	
+	if version >= 700
+		set spl=en spell "do spell check
+		set nospell "turn it off afterward
+	endif
+	"if user wants to spell-check only a certain size of the file 
+	"i.e. a file with more than 700 character
+	setlocal spell spelllang=en_us "set the spell-check to US English
+	set complete+=kspell "turn on word completion
+
+There is also a plugin that does spell-check for you, these are just some simple tips how you can get it fast.
+For more explanation on `vim`'s spell-check function, go to [Vim Documentation: Spell] (http://vimdoc.sourceforge.net/htmldoc/spell.html)
+Other fanicer `.vimrc` configuration on spell-check, go to [Throughtrobot: Vim Spell-Checking] (http://robots.throughtbot.com/vim-spell-checking)
 
 Pathogen:
 ---------
