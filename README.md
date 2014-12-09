@@ -47,6 +47,7 @@ For more detailed explaination on tabs, check on [The Vim Editor: Indenting Sour
 	set wildmenu "autocomplete for command line(filled up filename automatically)
 	set lazydraw "disable redraw and get a faster macro
 	set showmatch "highlight matching [{()}] when the cursor is over
+	set showcmd "display incomplete command in the lower right corner of the console
 	set mat=2 "for showmatch, set how many tenth of second it blinks
 	set history=700 "set the lines of history Vim remembers
 	set ruler "shows current position
@@ -59,7 +60,7 @@ For more detailed explaination on tabs, check on [The Vim Editor: Indenting Sour
 	set noerrobells "disable error bells
 	set list "show invisible characters
 	set confirm "ask if user want to save file before exit
-	syntax enable "enable syntax highlighting
+	syntax enable "enable syntax highlighting 
 	colorscheme desert 
 	set background dark "initialize colorscheme and set the background dark
 	
@@ -120,7 +121,11 @@ For more explanation on `vim`'s spell-check function, go to [Vim Documentation: 
 
 Other fanicer `.vimrc` configuration on spell-check, go to [Throughtrobot: Vim Spell-Checking] (http://robots.throughtbot.com/vim-spell-checking)
 
-Pathogen:
+`Plugin`:
+-------
+Earlier we mentioned `plugin` when we talked about color and spell-checking in `.vimrc` configuration. What is `plugin`? It is a `Vim` script file that will load automatically when `Vim` starts. Most plugins are usefule features that people created to make Vim more user-friendly. Here we will introduce some plugins that are useful.
+
+###Pathogen:
 ---------
 `Git` should already be installed by now. If it is not,
 
