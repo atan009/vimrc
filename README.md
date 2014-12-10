@@ -18,7 +18,7 @@ More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
 	cd
 	touch .vimrc
-	vim .vimrc
+	~/ .vimrc
 
 When the file first opened, there should be nothing in your `.vimrc` file. You can add any configuration you want to it. 
 
@@ -123,10 +123,10 @@ Other fanicer `.vimrc` configuration on spell-check, go to [Throughtrobot: Vim S
 
 `Plugin`:
 -------
-Earlier we mentioned `plugin` when we talked about color and spell-checking in `.vimrc` configuration. What is `plugin`? It is a `Vim` script file that will load automatically when `Vim` starts. Most plugins are usefule features that people created to make Vim more user-friendly. Here we will introduce some plugins that are useful.
+Earlier we mentioned `plugin` when we talked about colorscheme and spell-checking in `.vimrc` configuration. What is `plugin` and how is it different from `.vimrc`? Plugin is a `Vim` script file that will load automatically when `Vim` starts. Most plugins are usefule features that people created to make Vim more user-friendly. Here we will introduce some plugins that are useful.
 
-###Pathogen:
----------
+###Plugin #0 - Pathogen:
+------------------------
 `Git` should already be installed by now. If it is not,
 
 	cd
@@ -141,8 +141,8 @@ where `Pathogen` will be installed. The Second should be named
 "`bundle`" which will be where the plugins are stored. Go back to the 
 `$HOME` directory. type 
 "curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim".
-Installation:
--------------
+####Installation:
+-----------------
 	cd
 	mkdir .vim
 	cd .vim
@@ -171,14 +171,14 @@ From this point on, this tutorial will now assume:
 
 4. `Git` is installed
 
-Plugin #1 - `NERDtree`:
----------------------
+###Plugin #1 - `NERDtree`:
+---------------------------
 `NERDtree` allows you to view your files and directories in the form
 of a tree. You can easily access your files by using the mouse or
 arrow keys this way.
 
-Installation:
--------------
+####Installation:
+-----------------
 	cd ~/.vim/bundle
     git clone https://github.com/scrooloose/nerdtree.git
 
@@ -205,16 +205,16 @@ To open it again, type "`:NERDTree *an EXISTING directory`".
 
 More info at: [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
 
-Plugin #2 - `SuperTab`:
-------------------------
+###Plugin #2 - `SuperTab`:
+--------------------------
 `SuperTab` aids the user in quickly typing in strings of characters, but only
 already existing ones. This is useful for users that enjoy automatic text
 filling. By typing a few characters and pressing `<TAB>` the word will be
 filled automatically, unless there is more than one existing string with
 the same characters typed. In this situation, a list of words will be
 shown in which the user can choose the correct one.
-Installation:
--------------
+####Installation:
+-----------------
 	cd ~/.vim/bundle
     git clone https://github.com/ervandew/supertab.git
 A new directory should have been created named "`supertab`".
@@ -223,14 +223,14 @@ A new directory should have been created named "`supertab`".
 
 More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
-Plugin #3 - Solarized:
-----------------------
+###Plugin #3 - Solarized:
+-------------------------
 `Solarized` changes the colorscheme of the `vim` editor. Often times, the
 default is not the best. It can be extremely irritable when you cannot
 differentiate between different types of files in `vim` as well as the
 variety of things within source code. 
-Installation:
---------------
+####Installation:
+-----------------
 	cd ~/.vim/bundle
 	git clone https://github.com/altercation/vim-colors-solarized.git
 
@@ -254,8 +254,8 @@ More info at: [Github altercation/vim-colors-solarized] (https://github.com/alte
 Alternate color scheme: [Github sjl/badwolf] (https://github.com/sjl/badwolf/)
 					, [Github tomasr/molokai] (https://github.com/tomasr/molokai)
 
-Plugin #4 - `Syntastic`:
-----------------------
+###Plugin #4 - `Syntastic`:
+---------------------------
 `Syntastic` is a plugin which will save all programmers time. It detects
 for syntax errors BEFORE you even compile. As all programmers know, 
 these errors happen by mistake all the time and can be annoying after
@@ -268,16 +268,16 @@ to it.
 
 ![Syntastic](http://i.imgur.com/LPHf6U7.gif)
 
-Installation:
--------------
+####Installation:
+-----------------
 	cd ~/.vim/bundle
 	git clone https://github.com/scrooloose/syntastic.git
 A new directory named syntastic should have been added.
 
 More info at: [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
 
-Plugin #5 - `NERDcommenter`:
---------------------------
+###Plugin #5 - `NERDcommenter`:
+-------------------------------
 `NERDcommenter` is a plugin that makes commenting easier. It also makes
 removing comments easier. All of the commands should be done in either
 visual or normal mode. Type "`\cc`" to comment out the line highlighted 
@@ -288,16 +288,16 @@ ordinary `//`.
 
 ![NC1](http://i.imgur.com/BU8Ffmg.gif) ![NC2](http://i.imgur.com/C7ZMtP7.gif)
 
-Installation:
-------------
+####Installation:
+-----------------
 	cd ~/.vim/bundle
 	git clone https://github.com/scrooloose/nerdcommenter.git
 A new directory named nerdcommenter should have been added.
 
 More info at: [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 
-Plugin #6 - `Surround`:
----------------------
+###Plugin #6 - `Surround`:
+--------------------------
 `Surround` aids the user in adding, changing or deleting mappings. This
 includes parentheses, brackets and more. Type
 `cs[first character][second character]` to replace occurences of the
@@ -309,8 +309,8 @@ an entire line with parentheses by typing "`yssb`" or "`yss)`".
 
 ![Surround3](http://i.imgur.com/Ep8zeqz.gif) ![Surround4](http://i.imgur.com/VdIhp6T.gif)
 
-Installation:
--------------
+####Installation:
+-----------------
 	cd ~/.vim/bundle
 	git clone https://github.com/tpope/vim-surround.git
 A new directory named "`surround`" should be added.
