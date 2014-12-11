@@ -1,4 +1,4 @@
-`Vim`: :neckbeard::zzz:
+Vim`: :neckbeard::zzz:
 ----
 `Vim` is a text editor. It is similar to `Vi`, but can be considered
 to have more features. `Vim` itself is also similar to an IDE. It is
@@ -158,3 +158,9 @@ Press `return` on a state to revert the content of the file and use `p` to make 
 To quit the undo tree, press `q`. 
 
 For more explanation on `Gundo`, go to [Gundo: Graph your Vim undo tree in style.] (http://sjl.bitbucket.org/gundo.vim/)
+
+###Plugin #9 - `Fugitive`:
+--------------------------
+This is a test. 
+Type in some more words to see if this works
+
