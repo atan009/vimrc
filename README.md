@@ -5,11 +5,9 @@ to have more features. `Vim` itself is also similar to an IDE. It is
 capable of compiling files and running executables as well. `Vim` is
 very different from what most users are used to, however learning
 it usually proves to quite convenient and efficient.
+
 TL;DR `Vim` is an upgrade for `Vi` :smile:
-Installation:
--------------
-    cd
-    sudo apt-get install vim
+
 More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
 `Vimrc` :no_mouth::question:
@@ -129,9 +127,6 @@ Earlier we mentioned `plugin` when we talked about colorscheme and spell-checkin
 ------------------------
 `Git` should already be installed by now. If it is not,
 
-	cd
-	sudo apt-get install git-core
-
 Before installing any plugins, 
 we will need to include `Pathogen`. `Pathogen` makes installing plugins 
 easier. To begin, we need to be in the `$HOME` directory. In the `$HOME` directory 
@@ -141,13 +136,6 @@ where `Pathogen` will be installed. The Second should be named
 "`bundle`" which will be where the plugins are stored. Go back to the 
 `$HOME` directory. type 
 "curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim".
-####Installation:
------------------
-	cd
-	mkdir .vim
-	cd .vim
-	mkdir autoload bundle
-	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 	
 ![Pathogen](http://i.imgur.com/fUVGsRy.gif)
 
@@ -160,34 +148,11 @@ On a new line in your `.vimrc`, add
 
 More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen)
 
-#Important Note:
-From this point on, this tutorial will now assume:
-
-1. You have `Pathogen` installed correctly
-
-2. You have already made your `.vimrc` file
-
-3. `Vim` itself is installed
-
-4. `Git` is installed
-
 ###Plugin #1 - `NERDtree`:
 ---------------------------
 `NERDtree` allows you to view your files and directories in the form
 of a tree. You can easily access your files by using the mouse or
 arrow keys this way.
-
-####Installation:
------------------
-	cd ~/.vim/bundle
-    git clone https://github.com/scrooloose/nerdtree.git
-
-A new directory named "`nerdtree`" should have been created. Type "`vim`",
-"`:Helptags`" and "`:help NERD_tree.txt`" in this order.
-
-	vim
-	:Helptags
-	:help NERD_tree.txt
 	
 ![NT1](http://i.imgur.com/lLW7O1i.gif)
 
@@ -213,11 +178,6 @@ filling. By typing a few characters and pressing `<TAB>` the word will be
 filled automatically, unless there is more than one existing string with
 the same characters typed. In this situation, a list of words will be
 shown in which the user can choose the correct one.
-####Installation:
------------------
-	cd ~/.vim/bundle
-    git clone https://github.com/ervandew/supertab.git
-A new directory should have been created named "`supertab`".
 
 ![ST1](http://i.imgur.com/i12YWak.gif)
 
@@ -229,10 +189,6 @@ More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 default is not the best. It can be extremely irritable when you cannot
 differentiate between different types of files in `vim` as well as the
 variety of things within source code. 
-####Installation:
------------------
-	cd ~/.vim/bundle
-	git clone https://github.com/altercation/vim-colors-solarized.git
 
 A new directory named "`vim-colors-solarized`" should have been added.
 Now, we will need to modify our `.vimrc` depending on the style we like.
@@ -268,12 +224,6 @@ to it.
 
 ![Syntastic](http://i.imgur.com/LPHf6U7.gif)
 
-####Installation:
------------------
-	cd ~/.vim/bundle
-	git clone https://github.com/scrooloose/syntastic.git
-A new directory named syntastic should have been added.
-
 More info at: [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
 
 ###Plugin #5 - `NERDcommenter`:
@@ -287,12 +237,6 @@ Type "`\cu`" to uncomment the line that the cursor is highlighting. Type
 ordinary `//`.
 
 ![NC1](http://i.imgur.com/BU8Ffmg.gif) ![NC2](http://i.imgur.com/C7ZMtP7.gif)
-
-####Installation:
------------------
-	cd ~/.vim/bundle
-	git clone https://github.com/scrooloose/nerdcommenter.git
-A new directory named nerdcommenter should have been added.
 
 More info at: [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 
@@ -308,11 +252,5 @@ an entire line with parentheses by typing "`yssb`" or "`yss)`".
 ![Surround1](http://i.imgur.com/7BjSTfR.gif) ![Surround2](http://i.imgur.com/upeOBA1.gif)
 
 ![Surround3](http://i.imgur.com/Ep8zeqz.gif) ![Surround4](http://i.imgur.com/VdIhp6T.gif)
-
-####Installation:
------------------
-	cd ~/.vim/bundle
-	git clone https://github.com/tpope/vim-surround.git
-A new directory named "`surround`" should be added.
 
 More info at: [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
