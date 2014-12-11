@@ -129,10 +129,8 @@ Earlier we mentioned `plugin` when we talked about colorscheme and spell-checkin
 own private directories. `Pathogen` is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but `Pathogen` appeared to be a more basic one.
 
 Alternate Plugin Manager: [Github MarcWeber/vim-addon-manager] (https://github.com/MarcWeber/vim-addon-manager)
-
-Alternate Plugin Manager: [Github gmarik/Vundle.vim] (https://github.com/gmarik/Vundle.vim)
-
-Alternate Plugin Manager: [Github Shougo/neobundle.vim] (https://github.com/Shougo/neobundle.vim)
+, [Github gmarik/Vundle.vim] (https://github.com/gmarik/Vundle.vim)
+, [Github Shougo/neobundle.vim] (https://github.com/Shougo/neobundle.vim)
 
 More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen)
 
