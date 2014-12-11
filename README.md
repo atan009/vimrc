@@ -163,4 +163,3 @@ For more explanation on `Gundo`, go to [Gundo: Graph your Vim undo tree in style
 --------------------------
 
 This is a test case of me using Fugitive to add my README.md, commit the changes that I made and push it onto my repo. 
-
