@@ -161,6 +161,5 @@ For more explanation on `Gundo`, go to [Gundo: Graph your Vim undo tree in style
 
 ###Plugin #9 - `Fugitive`:
 --------------------------
-This is a test. 
-Type in some more words to see if this works
+Try to upload README.md through fugitive
 
