@@ -159,7 +159,7 @@ Now when we press `<F5>` in a file, `GUndo` will show us a graph of the tree of 
 
 Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between current state and selected state. 
 
-![Gundo](http://imgur.com/CJcWY8a.git)
+![Gundo](http://imgur.com/CJcWY8a.gif)
 
 To quit the undo tree, press `q`. 
 
@@ -181,4 +181,4 @@ To make it easier, here are a list of fugitive commands:
 
 The gif belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
 
-![fugitive](http://imgur.com/Vqxu02C.git)
+![fugitive](http://imgur.com/Vqxu02C.gif)
