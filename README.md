@@ -141,7 +141,7 @@ For one character search, enter `<leader><leader>w` (in `vim`, `<leader>` means 
 
 After adding the configurations, you can search up word the way you do it in `vim` and `EasyMotion` will highlight the word for you.
 
-![EasyMotion_n](http://giphy.com/gifs/TlK63ExqrJUEq3lX3Xi)
+![EasyMotion_n](http://i.imgur.com/OuA4tDm.gif)
 
 For more `EasyMotion` configuration and explanation, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
 
