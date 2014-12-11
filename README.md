@@ -125,26 +125,14 @@ Earlier we mentioned `plugin` when we talked about colorscheme and spell-checkin
 
 ###Plugin #0 - Pathogen:
 ------------------------
-`Git` should already be installed by now. If it is not,
+`Pathogen` is a plugin that will make installing other plugins easier. It also allows runtime files to be installed in their
+own private directories. `Pathogen` is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but `Pathogen` appeared to be a more basic one.
 
-Before installing any plugins, 
-we will need to include `Pathogen`. `Pathogen` makes installing plugins 
-easier. To begin, we need to be in the `$HOME` directory. In the `$HOME` directory 
-create a new directory called "`.vim`" if it does not already exist. In the "`.vim`" directory,
-Make two new directories. The first should be named "`autoload`" which is 
-where `Pathogen` will be installed. The Second should be named 
-"`bundle`" which will be where the plugins are stored. Go back to the 
-`$HOME` directory. type 
-"curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim".
-	
-![Pathogen](http://i.imgur.com/fUVGsRy.gif)
+Alternate Plugin Manager: [Github MarcWeber/vim-addon-manager] (https://github.com/MarcWeber/vim-addon-manager)
 
-If it was done properly, there should be a new directory inside the
-autoload directory. For the final steps, edit your `.vimrc` file.
-On a new line in your `.vimrc`, add
-"execute pathogen#infect()".
+Alternate Plugin Manager: [Github gmarik/Vundle.vim] (https://github.com/gmarik/Vundle.vim)
 
-![Pathogen2](http://i.imgur.com/iar6r0W.gif)
+Alternate Plugin Manager: [Github Shougo/neobundle.vim] (https://github.com/Shougo/neobundle.vim)
 
 More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen)
 
@@ -153,10 +141,6 @@ More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen
 `NERDtree` allows you to view your files and directories in the form
 of a tree. You can easily access your files by using the mouse or
 arrow keys this way.
-	
-![NT1](http://i.imgur.com/lLW7O1i.gif)
-
-This will tell `Vim` where
 `NERDtree` is installed as well as tell you the many capabilities of
 `NERDtree` such as bookmarking directories/files. However, this tutorial
 will only cover how to view your files in a tree form :+1:. In this help
@@ -189,17 +173,7 @@ More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 default is not the best. It can be extremely irritable when you cannot
 differentiate between different types of files in `vim` as well as the
 variety of things within source code. 
-
-A new directory named "`vim-colors-solarized`" should have been added.
-Now, we will need to modify our `.vimrc` depending on the style we like.
-For a dark background type:
-
-	syntax enable
-	set background=dark
-	colorscheme solarized
-![Solarized1](http://i.imgur.com/3vwzhsW.png)
-
-If you prefer a light background, you can change dark to light. It is
+It is
 possible to change the font and customize the colors to your own
 preference.
 
