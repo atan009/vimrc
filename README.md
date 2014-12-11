@@ -161,5 +161,5 @@ For more explanation on `Gundo`, go to [Gundo: Graph your Vim undo tree in style
 
 ###Plugin #9 - `Fugitive`:
 --------------------------
-Try to upload README.md through fugitive
+This is a test case of me using Fugitive to add my README.md, commit the changes that I made and push it onto my repo. 
 
