@@ -1,5 +1,5 @@
 `Vim`: :neckbeard::zzz:
-----
+-----------------------
 `Vim` is a text editor. It is similar to `Vi`, but can be considered
 to have more features. `Vim` itself is also similar to an IDE. It is
 capable of compiling files and running executables as well. `Vim` is
@@ -19,105 +19,6 @@ More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 	~/ .vimrc
 
 When the file first opened, there should be nothing in your `.vimrc` file. You can add any configuration you want to it. 
-
-Here are some common `.vimrc` configuration:
-
-####For Tabs and Spaces:
-
-	set shiftwidth=4 "1 tab == 4 spaces
-	set tabstop=4 "tabstop sets how many spaces the <TAB> character associate with
-	set softtabstop=4 "use space instead of tab
-	set expandtab "use space instead of tab
-	set smarttab "let Vim be smart about tab
-	set lbr "set line break
-	set tw=500 "set the line break on 500 characters (continue last one
-	set ai "make auto indent  (or "set autoindent")
-	set si "make smart indent
-	set wrap "allow wrap line
-	set copyindent "use existing indents for new indents
-	set preserveindent "save as much indent structure as possible
-
-For more detailed explaination on tabs, check on [The Vim Editor: Indenting Source Code] (http://vim.wikia.com/wiki/Indenting_source_code)
-
-####For UI Config (User Interface Configuration):
-
-	set number "show line number (or "set nu")
-	set wildmenu "autocomplete for command line(filled up filename automatically)
-	set lazydraw "disable redraw and get a faster macro
-	set showmatch "highlight matching [{()}] when the cursor is over
-	set showcmd "display incomplete command in the lower right corner of the console
-	set mat=2 "for showmatch, set how many tenth of second it blinks
-	set history=700 "set the lines of history Vim remembers
-	set ruler "shows current position
-	set cmdheight=2 "set the height of the command bar
-	set backspace=eol, start, indent "configure backspace to its default setting
-	set whichwrap+=<.>,h,l "(continue set backspace
-	set magic "turn on magic when using refular expressions
-	set autochdir "automatically cd into the directory the file is in
-	set undolevels=1000 "let vim allow 1000 undos
-	set noerrobells "disable error bells
-	set list "show invisible characters
-	set confirm "ask if user want to save file before exit
-	syntax enable "enable syntax highlighting 
-	colorscheme desert 
-	set background dark "initialize colorscheme and set the background dark
-	
-####For Searching:
-
-	set insearch "let vim search each characters as they are entered
-	set hlsearch "highlight matching search
-	set smartcase "let vim be smart about the case when searching
-	map <silent> <leader><cr> :noh<cr> "disable highlight with <cr>
-
-For more explanation and setting on Searching in `Vim`, check on [The Vim Editor: Searching] (http://vim.wikia.com/wiki/Searching)
-
-####For Folding:
-
-	set foldenable "enable folds(show all folds)
-	set foldlevelstart=10 "since there could be nested folds
-						  "this setting can prevent the user from having too many folds
-	set foldmethod=indent "set the fold based on indentation
-					  	  "can also be marker, manual, expr, syntax or diff 
-						  "(check :help for more information)
-
-For more detailed information, check on [The Vim Editor: Folding] (http://vim.wikia.com/wiki/Folding)
-
-####For Movement:
-	
-	set mouse=a "enable mouse support in console
-	set cursorline "underline current line that the cursor is on (or "set cu")
-	hi CursorLine term=none cterm=none ctermbg=3 
-						  "adjust color, have highlight instead of underline
-	nnormap j gj "if there is a long line wrapped up 
-	nnormap k gk "j and k will not skipped the wrapped up line
-	set scrolloff=5 "keep at least 5 lines above/below when scrolling
-	set sidescrolloff=5 "keep at least 5 lines left/right when side scrolling
-	nnormap BB ^ "in Vim, ^ and $ are jump to the beginning and end of line
-	nnormap EE $ "these two set BB and EE to ^ and $ (BB and EE can be anything)
-	map <space> / "set <space> to /(search)
-	map <c-space> ? "set ctrl + <space> to ?(backwards search)
-	nnormap gV `[v`] "selects the block of characters that was in INSERT mode last time
-
-For tips on moverments in `Vim`, check on [Hacker's Blog: Vim Movements] (http://nerd-hacking.blogspot.com/2006/05/vim-movements.html)
-
-For more color for cursorline adjustment, go to [The Vim Editor: Colortest:xterm 256 color test and visual color list] (http://www.vim.org/scripts/script.php?script_id=1349)
-
-####For Typing and Spell-Checking:
-	
-	if version >= 700
-		set spl=en spell "do spell check
-		set nospell "turn it off afterward
-	endif
-	"if user wants to spell-check only a certain size of the file 
-	"i.e. a file with more than 700 character
-	setlocal spell spelllang=en_us "set the spell-check to US English
-	set complete+=kspell "turn on word completion
-
-There is also a plugin that does spell-check for you, these are just some simple tips how you can get it fast.
-
-For more explanation on `vim`'s spell-check function, go to [Vim Documentation: Spell] (http://vimdoc.sourceforge.net/htmldoc/spell.html)
-
-Other fanicer `.vimrc` configuration on spell-check, go to [Throughtrobot: Vim Spell-Checking] (http://robots.throughtbot.com/vim-spell-checking)
 
 `Plugin`:
 -------
@@ -226,3 +127,58 @@ an entire line with parentheses by typing "`yssb`" or "`yss)`".
 ![Surround3](http://i.imgur.com/Ep8zeqz.gif) ![Surround4](http://i.imgur.com/VdIhp6T.gif)
 
 More info at: [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
+
+###Plugin #7 - `EasyMotion`:
+----------------------------
+`EasyMotion` helps you make large jump within a buffer easier and faster. It allows you to make jumps by searching up your destination. 
+
+For one character search, enter `<leader><leader>w` (in `vim`, `<leader>` means `\`). A word `Target:` will appear in the commadn bar. .Enter any character you want to search and `EasyMotion` will highlight all the appearances of the character in the buffer. Enter the one you want to jump to and `EasyMotion` will take you there.
+
+![EasyMotionW](http://i.imgur.com/OuA4tDm.gif)
+
+`EasyMotion`also supports word search. TO do this, add two configurations to your `.vimrc` file. 
+	
+	map / <Plug>(easymotion-sn)
+	omap / <Plug>(easymotion-tn)
+
+After adding the configurations, you can search up word the way you do it in `vim` and `EasyMotion` will highlight the word for you.
+
+* add a gif here on searching up whole word ![EasyMotionN] ()
+
+For more `EasyMotion` configuration and explanation, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
+
+###Plugin #8 - `Gundo`:
+-----------------------
+In `Vim`, all the changes you make to your file are save as a tree. `Gundo` is a plugin that graph your `Vim` undo tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
+
+To use `Gundo`, first you have to add a mapping to your `.vimrc` file. Here we use `<F5>` as example. 
+
+	nnoremap <F5> :GUndoToggle<CR>
+
+Now when we press `<F5>` in a file, `GUndo` will show us a graph of the tree of changes. Our current position in the undo tree is the one marker with `@`. To move between the graph, use `j` and `k` keys. Like `Vim`, `gg` jumps to top of the file while `G` brings you ot the bottom of the file.  
+
+Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between current state and selected state. 
+
+* add a gif here on Gundo ![Gundo]()
+
+To quit the undo tree, press `q`. 
+
+For more explanation on `Gundo`, go to [Gundo: Graph your Vim undo tree in style.] (http://sjl.bitbucket.org/gundo.vim/)
+
+###Plugin #9 - `Fugitive`:
+--------------------------
+As a git user, `fugitive` is probably the most useful plugin in this tutorial. It is a `Git` wrapper that collects and creates a lot of shortcuts of `git`. With `fugitive`, user can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
+
+To make it easier, here are a list of fugitive commands:
+	
+	:Gstatus	git status
+	:Gwrite		git add (filename)
+	:Gcommit	git commit
+	:Gblame		git blame
+	:Gmove		git mv
+	:Ggrep		git grep
+	:Gread		git checkout --filename
+
+The gif belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
+
+*add a gif on pushing file with fugitive ![fugitive]()
