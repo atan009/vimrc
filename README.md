@@ -127,3 +127,34 @@ an entire line with parentheses by typing "`yssb`" or "`yss)`".
 ![Surround3](http://i.imgur.com/Ep8zeqz.gif) ![Surround4](http://i.imgur.com/VdIhp6T.gif)
 
 More info at: [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
+
+###Plugin #7 - `EasyMotion`:
+----------------------------
+`EasyMotion` helps you make large jump within a buffer easier and faster. It allows you to make jumps by searching up your destination. 
+
+For one character search, enter `<leader><leader>w` (in `vim`, `<leader>` means `\`). A word `Target:` will appear in the commadn bar. .Enter any character you want to search and `EasyMotion` will highlight all the appearances of the character in the buffer. Enter the one you want to jump to and `EasyMotion` will take you there.
+
+`EasyMotion`also supports word search. TO do this, add two configurations to your `.vimrc` file. 
+	
+	map / <Plug>(easymotion-sn)
+	omap / <Plug>(easymotion-tn)
+
+After adding the configurations, you can search up word the way you do it in `vim` and `EasyMotion` will highlight the word for you.
+
+For more `EasyMotion` configuration and explanation, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
+
+###Plugin #8 - `Gundo`:
+-----------------------
+In `Vim`, all the changes you make to your file are save as a tree. `Gundo` is a plugin that graph your `Vim` undo tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
+
+To use `Gundo`, first you have to add a mapping to your `.vimrc` file. Here we use `<F5>` as example. 
+
+	nnoremap <F5> :GUndoToggle<CR>
+
+Now when we press `<F5>` in a file, `GUndo` will show us a graph of the tree of changes. Our current position in the undo tree is the one marker with `@`. To move between the graph, use `j` and `k` keys. Like `Vim`, `gg` jumps to top of the file while `G` brings you ot the bottom of the file.  
+
+Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between current state and selected state. 
+
+To quit the undo tree, press `q`. 
+
+For more explanation on `Gundo`, go to [Gundo: Graph your Vim undo tree in style.] (http://sjl.bitbucket.org/gundo.vim/)
