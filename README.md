@@ -161,5 +161,16 @@ For more explanation on `Gundo`, go to [Gundo: Graph your Vim undo tree in style
 
 ###Plugin #9 - `Fugitive`:
 --------------------------
+As a git user, `fugitive` is probably the most useful plugin in this tutorial. It is a `Git` wrapper that collects and creates a lot of shortcuts of `git`. With `fugitive`, user can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
 
-This is a test case of me using Fugitive to add my README.md, commit the changes that I made and push it onto my repo. 
+To make it easier, here are a list of fugitive commands:
+	
+	:Gstatus == git status
+	:Gwrite == git add (filename)
+	:Gcommit == git commit
+	:Gblame == git blame
+	:Gmove == git mv
+	:Ggrep == git grep
+	:Gread == git checkout --filename
+
+The git belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
