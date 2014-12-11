@@ -3,8 +3,8 @@ set shiftwidth=4	"1 tab == 4 spaces
 set tabstop=4		"<TAB> == 4 spaces
 set softtabstop=4	"<TAB> and backspace
 set smarttab		"smart tab
-set ai				"set auto indent
-set si				"set smart indent
+set ai			"set auto indent
+set si			"set smart indent
 set copyindent		"use exisiting indents for new indents
 set preserveindent	"save as much indent structure as possible
 
@@ -12,22 +12,22 @@ set preserveindent	"save as much indent structure as possible
 
 "UI Config
 set number			"line number
-set showmatch		"highlight matching [({})]
+set showmatch			"highlight matching [({})]
 set mat=2			"for showmatch, set how many tenth of second it blinks
 set ruler			"show current position
 set magic			"magic for regular expression
 set confirm			"ask to save file
 set showcmd			"display incomplete command in the lower right corner of the console
-set undolevels=1000 "let vim allow 1000 undos
-syntax enable		"enable syntax highlighting
+set undolevels=1000 		"let vim allow 1000 undos
+syntax enable			"enable syntax highlighting
 "set list			"show invisible characters
-"set autochdir		"automatically cd into the dir the file vim is editing
-"set wildmenu		"autocomplete for command line
-"set lazydraw		"disbale redraw and get a fester macro
-"set history=700	"set the lines of history vim remembers to 700
+"set autochdir			"automatically cd into the dir the file vim is editing
+"set wildmenu			"autocomplete for command line
+"set lazydraw			"disbale redraw and get a fester macro
+"set history=700		"set the lines of history vim remembers to 700
 "set so=5;			"keep at least 5 lines above/below
-"set cmdheight=2	"set the height of the command bar to 2
-"colorscheme default
+"set cmdheight=2		"set the height of the command bar to 2
+"colorscheme default		"different colorscheme built in with vim
 "colorscheme zellner 
 "colorscheme torte 
 "colorscheme slate 
@@ -46,31 +46,31 @@ syntax enable		"enable syntax highlighting
 "colorscheme desert
 
 "Searching
-set incsearch					   "search as char are entered
-set hlsearch					   "highlight matches
-set smartcase					   "smart with case search
+set incsearch			   "search as char are entered
+set hlsearch			   "highlight matches
+set smartcase			   "smart with case search
 map <silent> <leader><cr> :noh<cr> "disable highlight with <cr>
 
 "Go to vim.wilia.com/wiki/Searching for more explanation on search in vim
 
 "Folding
-set foldenable		  "enable folds
+set foldenable	      "enable folds
 set foldlevelstart=10 "prevent too many folds
 set foldmethod=indent "set fold based on indentation
-					  "can also be marker, manual, expr, syntax, or diff
-					  "check :help for more information
+		      "can also be marker, manual, expr, syntax, or diff
+		      "check :help for more information
 
 "Movement
-set mouse=a									 "mouse support in console
-set cursorline								 "underline current line that the current line is on
+set mouse=a				     "mouse support in console
+set cursorline				     "underline current line that the current line is on
 hi CursorLine term=none cterm=none ctermbg=3 "highlight cursor
 nnoremap j gj
-nnoremap k gk "j, k does not skip long lines
+nnoremap k gk 				     "j, k does not skip long lines
 "nnoremap BB ^
-"nnoremap EE $								 "use BB and EE instead of ^ and $
-"map <space> /								 "set <space> to / (search)
-"map <c-space> ?						     "set <ctrl> + <space> to ? (backward search)
-"nnoremap gV `[v`]							 "selects the block of characters in INSERT last time
+"nnoremap EE $				     "use BB and EE instead of ^ and $
+"map <space> /				     "set <space> to / (search)
+"map <c-space> ?			     "set <ctrl> + <space> to ? (backward search)
+"nnoremap gV `[v`]			     "selects the block of characters in INSERT last time
 
 "Go to nerd-hacking.blogspot.com/2006/05/vim-movements.html for tips on movement in vim
 
