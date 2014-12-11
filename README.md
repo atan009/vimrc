@@ -1,5 +1,5 @@
 `Vim`: :neckbeard::zzz:
-----
+-----------------------
 `Vim` is a text editor. It is similar to `Vi`, but can be considered
 to have more features. `Vim` itself is also similar to an IDE. It is
 capable of compiling files and running executables as well. `Vim` is
@@ -165,12 +165,12 @@ As a git user, `fugitive` is probably the most useful plugin in this tutorial. I
 
 To make it easier, here are a list of fugitive commands:
 	
-	:Gstatus == git status
-	:Gwrite == git add (filename)
-	:Gcommit == git commit
-	:Gblame == git blame
-	:Gmove == git mv
-	:Ggrep == git grep
-	:Gread == git checkout --filename
+	:Gstatus	git status
+	:Gwrite		git add (filename)
+	:Gcommit	git commit
+	:Gblame		git blame
+	:Gmove		git mv
+	:Ggrep		git grep
+	:Gread		git checkout --filename
 
-The git belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
+The gif belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
