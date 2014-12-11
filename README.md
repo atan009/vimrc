@@ -134,6 +134,8 @@ More info at: [Github tpope/vim-surround] (https://github.com/tpope/vim-surround
 
 For one character search, enter `<leader><leader>w` (in `vim`, `<leader>` means `\`). A word `Target:` will appear in the commadn bar. .Enter any character you want to search and `EasyMotion` will highlight all the appearances of the character in the buffer. Enter the one you want to jump to and `EasyMotion` will take you there.
 
+![EasyMotionW](http://i.imgur.com/OuA4tDm.gif)
+
 `EasyMotion`also supports word search. TO do this, add two configurations to your `.vimrc` file. 
 	
 	map / <Plug>(easymotion-sn)
@@ -141,7 +143,7 @@ For one character search, enter `<leader><leader>w` (in `vim`, `<leader>` means 
 
 After adding the configurations, you can search up word the way you do it in `vim` and `EasyMotion` will highlight the word for you.
 
-![EasyMotion_n](http://i.imgur.com/OuA4tDm.gif)
+* add a gif here on searching up whole word ![EasyMotionN] ()
 
 For more `EasyMotion` configuration and explanation, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
 
@@ -156,6 +158,8 @@ To use `Gundo`, first you have to add a mapping to your `.vimrc` file. Here we u
 Now when we press `<F5>` in a file, `GUndo` will show us a graph of the tree of changes. Our current position in the undo tree is the one marker with `@`. To move between the graph, use `j` and `k` keys. Like `Vim`, `gg` jumps to top of the file while `G` brings you ot the bottom of the file.  
 
 Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between current state and selected state. 
+
+* add a gif here on Gundo ![Gundo]()
 
 To quit the undo tree, press `q`. 
 
@@ -176,3 +180,5 @@ To make it easier, here are a list of fugitive commands:
 	:Gread		git checkout --filename
 
 The gif belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
+
+*add a gif on pushing file with fugitive ![fugitive]()
