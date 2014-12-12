@@ -1,10 +1,6 @@
-`Vim`: :neckbeard::zzz:
+`Vim` :neckbeard::zzz:
 -----------------------
-`Vim` is a text editor. It is similar to `Vi`, but can be considered
-to have more features. `Vim` itself is also similar to an IDE. It is
-capable of compiling files and running executables as well. `Vim` is
-very different from what most users are used to, however learning
-it usually proves to quite convenient and efficient.
+`Vim` is a text editor. It is similar to `Vi`, but can be considered to have more features. `Vim` itself is also similar to an IDE. It is capable of compiling files and running executables as well. `Vim` is very different from what most users are used to, however learning it usually proves to quite convenient and efficient.
 
 TL;DR `Vim` is an upgrade for `Vi` :smile:
 
@@ -14,9 +10,8 @@ More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 ----
 `Vimrc` is a file that allows user to configure personal setting in `vim`. It exists in the `$HOME` directory in Unix. If one does not exist, create a filed named "`.vimrc`" in your `$HOME` directory. 
 
-	cd
 	touch .vimrc
-	~/ .vimrc
+	vim .vimrc
 
 When the file first opened, there should be nothing in your `.vimrc` file. You can add any configuration you want to it. 
 
@@ -24,10 +19,9 @@ When the file first opened, there should be nothing in your `.vimrc` file. You c
 -------
 Earlier we mentioned `plugin` when we talked about colorscheme and spell-checking in `.vimrc` configuration. What is `plugin` and how is it different from `.vimrc`? Plugin is a `Vim` script file that will load automatically when `Vim` starts. Most plugins are usefule features that people created to make Vim more user-friendly. Here we will introduce some plugins that are useful.
 
-###Plugin #0 - Pathogen:
+###Plugin #0 - `Pathogen`:
 ------------------------
-`Pathogen` is a plugin that will make installing other plugins easier. It also allows runtime files to be installed in their
-own private directories. `Pathogen` is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but `Pathogen` appeared to be a more basic one.
+`Pathogen` is a plugin that will make installing other plugins easier. It also allows runtime files to be installed in their own private directories. `Pathogen` is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but `Pathogen` appeared to be a more basic one.
 
 Alternate Plugin Manager: [Github MarcWeber/vim-addon-manager] (https://github.com/MarcWeber/vim-addon-manager)
 , [Github gmarik/Vundle.vim] (https://github.com/gmarik/Vundle.vim)
@@ -37,16 +31,10 @@ More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen
 
 ###Plugin #1 - `NERDtree`:
 ---------------------------
-`NERDtree` allows you to view your files and directories in the form
-of a tree. You can easily access your files by using the mouse or
-arrow keys this way.
-`NERDtree` is installed as well as tell you the many capabilities of
-`NERDtree` such as bookmarking directories/files. However, this tutorial
-will only cover how to view your files in a tree form :+1:. In this help
-page, type "`:NERDTree *ONE OF YOUR ACTUAL DIRECTORIES`". On the left,
-it should now display all the directories inside your chosen directory.
+`NERDtree` allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. `NERDtree` is installed as well as tell you the many capabilities of `NERDtree` such as bookmarking directories/files. However, this tutorial will only cover how to view your files in a tree form :+1:. In this help page, type "`:NERDTree *ONE OF YOUR ACTUAL DIRECTORIES`". On the left, it should now display all the directories inside your chosen directory. 
+
 You can use the arrow keys to navigate between files/directories and
-press ENTER to read into it. To close NERDtree type "`NERDTreeClose`".
+ press `<ENTER>` to read into it. To close `NERDtree` type "`NERDTreeClose`".
 To open it again, type "`:NERDTree *an EXISTING directory`".
 
 ![NT2](http://i.imgur.com/3OCe5YM.gif)
@@ -143,7 +131,7 @@ For one character search, enter `<leader><leader>w` (in `vim`, `<leader>` means 
 
 After adding the configurations, you can search up word the way you do it in `vim` and `EasyMotion` will highlight the word for you.
 
-* add a gif here on searching up whole word ![EasyMotionN] ()
+![EasyMotionN] (http://imgur.com/DVc9xzl.gif)
 
 For more `EasyMotion` configuration and explanation, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
 
@@ -159,7 +147,7 @@ Now when we press `<F5>` in a file, `GUndo` will show us a graph of the tree of 
 
 Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between current state and selected state. 
 
-* add a gif here on Gundo ![Gundo]()
+![Gundo](http://imgur.com/CJcWY8a.gif)
 
 To quit the undo tree, press `q`. 
 
@@ -181,4 +169,4 @@ To make it easier, here are a list of fugitive commands:
 
 The gif belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
 
-*add a gif on pushing file with fugitive ![fugitive]()
+![fugitive](http://imgur.com/Vqxu02C.gif)
