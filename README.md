@@ -1,3 +1,9 @@
+`Installation`:
+---------------
+To install this `.vimrc` configuration. Simply, clone the repo and move the `.vim` folder and `.vimrc` file to the home directory. An alternative is to copy and paste this command in the terminal
+
+	git clone https://github.com/atan009/vimrc.git; mv vimrc/.vim ~/; mv vimrc/.vimrc ~/
+
 `Vim` :neckbeard::zzz:
 -----------------------
 `Vim` is a text editor. It is similar to `Vi`, but can be considered to have more features. `Vim` itself is also similar to an IDE. It is capable of compiling files and running executables as well. `Vim` is very different from what most users are used to, however learning it usually proves to quite convenient and efficient.
