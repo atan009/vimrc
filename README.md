@@ -1,3 +1,7 @@
+`Modifications`:
+----------------
+To remove a plugin you don't like or feel is unimportant, just remove the name of that plugin in the bundle directory. To add a plugin, you should check whether it is first compatible with the other plugins. If it is, then you may simply install it by following the installation directions given by the creator. Then depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
+
 `Installation`:
 ---------------
 To install this `.vimrc` configuration. Simply, clone the repo and move the `.vim` folder and `.vimrc` file to the home directory. An alternative is to copy and paste this command in the terminal
