@@ -45,7 +45,7 @@ git clone git://github.com/tpope/vim-surround.git
 #:help surround
 
 #Plugin #7 - EasyMotion
-git clone https://github.com/Lokaltog/vim-easymotion ~/.vim/bundle/vim-easymotion
+git clone https://github.com/Lokaltog/vim-easymotion.git ~/.vim/bundle/vim-easymotion
 
 #Plugin #8 - Gundo
 git clone http://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
@@ -53,4 +53,4 @@ git clone http://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
 #Plugin #9 - Fugitive
 cd ~/.vim/bundle
 git clone git://github.com/tpope/vim-fugitive.git
-#vim -s NONE -c "helptags vim-fugitive/doc" -c q
+#vim -s NONE -c "helptags vim-fugitive/doc" -c
