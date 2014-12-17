@@ -27,7 +27,7 @@ git clone https://github.com/ervandew/supertab.git
 cd ~/.vim/bundle
 git clone git://github.com/altercation/vim-colors-solarized.git
 #move
-mv vim-collors-solarized ~/.vim/bundle/
+mv vim-colors-solarized ~/.vim/bundle/
 
 #Plugin #4 - Syntastic
 cd ~/.vim/bundle
@@ -50,9 +50,9 @@ git clone git://github.com/tpope/vim-surround.git
 
 #Plugin #8 - Gundo
 cd ~/.vim/bundle
-git clone http://github.com/sjl/gundo.vim.git 
+git clone https://github.com/sjl/gundo.vim.git 
 
 #Plugin #9 - Fugitive
 cd ~/.vim/bundle
-git clone git://github.com/tpope/vim-fugitive.git
+git clone https://github.com/tpope/vim-fugitive.git
 #vim -s NONE -c "helptags vim-fugitive/doc" -c
