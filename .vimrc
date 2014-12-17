@@ -80,3 +80,48 @@ set scrolloff=5					 "minimum lines to keep above and below
 setlocal spell spelllang=en_us "set spell-check to US English
 set complete+=kspell
 
+
+
+".vimrc Config for Solarized Colorscheme
+"syntax enable
+"set background=dark "for dark background
+"set background=light "for light background
+"colorscheme solarized
+
+"if user wants to different background in GUI and temrminal
+"if has('gui_running')
+"	set background=light
+"else
+"	set background=dark
+"endif
+
+".vimrc Config for NERDcommenter
+"filetype plugin on
+
+".vimrc Config for EasyMotion
+"let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+"nmap s <Plug>(easymotion-s)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+"nmap s <Plug>(easymotion-s2)
+
+" Turn on case sensitive feature
+"let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+"map <Leader>j <Plug>(easymotion-j)
+"map <Leader>k <Plug>(easymotion-k)
+
+".vimrc Config for Gundo
+"nnoremap<F5> :GundoToggle<CR>
+"adjust width, height, and preview buttom
+"below are all same as default
+"let g:gundo_width = 45
+"let g:gundo_preview_height = 15
+"let g:gundo_right = 0
+

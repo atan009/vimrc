@@ -202,3 +202,7 @@ To make it easier, here are a list of fugitive commands:
 The gif belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
 
 ![fugitive](http://imgur.com/Vqxu02C.gif)
+
+For more explanation on `Fugitive`, go to [Github tpope/vim-fugitive] (https://github.com/tpope/vim-fugitive)
+
+
