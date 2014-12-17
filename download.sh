@@ -45,8 +45,8 @@ git clone git://github.com/tpope/vim-surround.git
 #:help surround
 
 #Plugin #7 - EasyMotion
-cd ~/.vim/bundle
-git clone https://github.com/Lokaltog/vim-easymotion.git 
+#cd ~/.vim/bundle
+#git clone https://github.com/Lokaltog/vim-easymotion.git 
 
 #Plugin #8 - Gundo
 cd ~/.vim/bundle
