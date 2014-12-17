@@ -1,13 +1,10 @@
-`Modifications`:
-----------------
+Modifications:
+---------------
 To remove a plugin you don't like or feel is unimportant, just remove the name of that plugin in the bundle directory. To add a plugin, you should check whether it is first compatible with the other plugins. If it is, then you may simply install it by following the installation directions given by the creator. Then depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
 
-`Installation`:
----------------
-Before install, make sure you have:
-	`git`
-	`vim`
-	`svn` (Subversion)
+Installation:
+--------------
+Before install, make sure you have:`git`, `vim`, and `Subversion`(svn)
 
 To install `git`, type
 
