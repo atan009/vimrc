@@ -1,12 +1,34 @@
-`Modifications`:
-----------------
+Modifications:
+---------------
 To remove a plugin you don't like or feel is unimportant, just remove the name of that plugin in the bundle directory. To add a plugin, you should check whether it is first compatible with the other plugins. If it is, then you may simply install it by following the installation directions given by the creator. Then depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
 
-`Installation`:
----------------
-To install this `.vimrc` configuration. Simply, clone the repo and move the `.vim` folder and `.vimrc` file to the home directory. An alternative is to copy and paste this command in the terminal
+Installation:
+--------------
+Before install, make sure you have:`git`, `vim`, and `Subversion`(svn)
 
-	git clone https://github.com/atan009/vimrc.git; mv vimrc/.vim ~/; mv vimrc/.vimrc ~/
+To install `git`, type
+
+	sudo apt-get install git-core
+
+or check [Git: Getting Started - Installing Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for instruction to install `git`.
+
+To install `vim`, type
+	
+	sudo apt-get install vim
+
+or check [The Vim Editor: Downloading Vim](http://www.vim.org/download.php) for instruction to install `vim`
+
+To install `svn`, type
+	
+	apt-get install subversion
+	apt-get install libapache2-svn
+
+or go to [Apache Subversion Binary Packages](https://subversion.apache.org/packages.html) to find the corresponding download command.
+	
+After everything is installed, type the command below to download `.vimrc` and all the plugins that we have.
+
+	wget https://github.com/atan009/vimrc/raw/master/download.sh && sh download.sh
+
 
 `Vim` :neckbeard::zzz:
 -----------------------
