@@ -24,7 +24,7 @@ or go to [Apache Subversion Binary Packages](https://subversion.apache.org/packa
 	
 After everything is installed, type the command below to download `.vimrc` and all the plugins that we have.
 
-	wget https://github.com/atan009/vimrc/raw/master/vimrc_download.sh && sh vimrc_download.sh
+	wget https://github.com/atan009/vimrc/raw/master/download.sh && sh download.sh
 
 
 `Vim` :neckbeard::zzz:
