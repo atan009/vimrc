@@ -45,10 +45,12 @@ git clone git://github.com/tpope/vim-surround.git
 #:help surround
 
 #Plugin #7 - EasyMotion
-git clone https://github.com/Lokaltog/vim-easymotion.git ~/.vim/bundle/vim-easymotion
+cd ~/.vim/bundle
+git clone https://github.com/Lokaltog/vim-easymotion.git 
 
 #Plugin #8 - Gundo
-git clone http://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
+cd ~/.vim/bundle
+git clone http://github.com/sjl/gundo.vim.git 
 
 #Plugin #9 - Fugitive
 cd ~/.vim/bundle
