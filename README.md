@@ -10,16 +10,22 @@ Before install, make sure you have:
 	`svn` (Subversion)
 
 To install `git`, type
+
 	sudo apt-get install git-core
+
 or check [Git: Getting Started - Installing Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for instruction to install `git`.
 
 To install `vim`, type
+	
 	sudo apt-get install vim
+
 or check [The Vim Editor: Downloading Vim](http://www.vim.org/download.php) for instruction to install `vim`
 
 To install `svn`, type
+	
 	apt-get install subversion
 	apt-get install libapache2-svn
+
 or go to [Apache Subversion Binary Packages](https://subversion.apache.org/packages.html) to find the corresponding download command.
 	
 After everything is installed, type the command below to download `.vimrc` and all the plugins that we have.
