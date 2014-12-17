@@ -4,9 +4,28 @@ To remove a plugin you don't like or feel is unimportant, just remove the name o
 
 `Installation`:
 ---------------
-To install this `.vimrc` configuration. Simply, clone the repo and move the `.vim` folder and `.vimrc` file to the home directory. An alternative is to copy and paste this command in the terminal
+Before install, make sure you have:
+	`git`
+	`vim`
+	`svn` (Subversion)
 
-	git clone https://github.com/atan009/vimrc.git; mv vimrc/.vim ~/; mv vimrc/.vimrc ~/
+To install `git`, type
+	sudo apt-get install git-core
+or check [Git: Getting Started - Installing Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for instruction to install `git`.
+
+To install `vim`, type
+	sudo apt-get install vim
+or check [The Vim Editor: Downloading Vim](http://www.vim.org/download.php) for instruction to install `vim`
+
+To install `svn`, type
+	apt-get install subversion
+	apt-get install libapache2-svn
+or go to [Apache Subversion Binary Packages](https://subversion.apache.org/packages.html) to find the corresponding download command.
+	
+After everything is installed, type the command below to download `.vimrc` and all the plugins that we have.
+
+	wget https://github.com/atan009/vimrc/raw/master/vimrc_download.sh && sh vimrc_download.sh
+
 
 `Vim` :neckbeard::zzz:
 -----------------------
