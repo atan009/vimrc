@@ -62,10 +62,12 @@ set foldmethod=indent "set fold based on indentation
 
 "Movement
 set mouse=a				     "mouse support in console
+set mousehide				 "hide cursor when typing
 set cursorline				     "underline current line that the current line is on
 hi CursorLine term=none cterm=none ctermbg=3 "highlight cursor
 nnoremap j gj
 nnoremap k gk 				     "j, k does not skip long lines
+set scrolloff=5					 "minimum lines to keep above and below
 "nnoremap BB ^
 "nnoremap EE $				     "use BB and EE instead of ^ and $
 "map <space> /				     "set <space> to / (search)
@@ -78,4 +80,3 @@ nnoremap k gk 				     "j, k does not skip long lines
 setlocal spell spelllang=en_us "set spell-check to US English
 set complete+=kspell
 
-"Go to http://robots.throughtbot.com/vim-spell-checking for more tips on spell-checking
