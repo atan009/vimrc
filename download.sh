@@ -49,14 +49,8 @@ cd ~/.vim/bundle
 git clone https://github.com/Lokaltog/vim-easymotion.git 
 
 #Plugin #8 - Gundo
-cd ~/.vim/bundle
-mkdir Gundo
-cd Gundo
-git clone https://github.com/sjl/gundo.vim.git 
+git clone https://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
 
 #Plugin #9 - Fugitive
 cd ~/.vim/bundle
-mkdir fugitive
-cd fugitive
-git clone https://github.com/tpope/vim-fugitive.git
-#vim -s NONE -c "helptags vim-fugitive/doc" -c
+git clone http://github.com/tpope/vim-fugitive.git #vim -s NONE -c "helptags vim-fugitive/doc" -c
