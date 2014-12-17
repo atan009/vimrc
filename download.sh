@@ -25,7 +25,7 @@ git clone https://github.com/ervandew/supertab.git
 #Plugin #3 - Solarized
 #clone
 cd ~/.vim/bundle
-git clone git://github.com/altercation/vim-colors-solarized.git
+git clone https://github.com/altercation/vim-colors-solarized.git
 #move
 mv vim-colors-solarized ~/.vim/bundle/
 
@@ -40,7 +40,7 @@ git clone https://github.com/scrooloose/nerdcommenter.git
 
 #Plugin #6 - Surround
 cd ~/.vim/bundle
-git clone git://github.com/tpope/vim-surround.git
+git clone https://github.com/tpope/vim-surround.git
 #:Helptags
 #:help surround
 
@@ -50,9 +50,13 @@ git clone https://github.com/Lokaltog/vim-easymotion.git
 
 #Plugin #8 - Gundo
 cd ~/.vim/bundle
+mkdir Gundo
+cd Gundo
 git clone https://github.com/sjl/gundo.vim.git 
 
 #Plugin #9 - Fugitive
 cd ~/.vim/bundle
+mkdir fugitive
+cd fugitive
 git clone https://github.com/tpope/vim-fugitive.git
 #vim -s NONE -c "helptags vim-fugitive/doc" -c
