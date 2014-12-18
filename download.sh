@@ -4,53 +4,47 @@
 #move to $HOME to sort everything later
 cd
 
-#download .vimrc from atan009/vimrc
-wget https://github.com/atan009/vimrc/raw/master/.vimrc 
+#creat a temp dir to place the cloned github repo
+mkdir temp/temp/HIF31EW
+cd temp/temp/HIF31EW
 
-#download the autoload and bundle folder
-#inside autoload, there will be a file called pathogen, which is plugin#0
-svn checkout https://github.com/atan009/vimrc/trunk/.vim
+#download the repo
+git clone https://github.com/atan009/vimrc
 
-#maunuall download all the plugins for user
-#Plugin #1 - NERDtree
-cd ~/.vim/bundle
-git clone https://github.com/scrooloose/nerdtree.git
-#:Helptags
-#:help NERD_tree.txt
+#check if .vimrc and .vim already exist
+#if yes, rename the file and move it to a folder called old_vim
+#if no, create .vim folder, move autoload and bundle into that .vim folder
 
-#Plugin #2 - SuperTab
-cd ~/.vim/bundle
-git clone https://github.com/ervandew/supertab.git
+#go back to $HOME
+cd
 
-#Plugin #3 - Solarized
-#clone
-cd ~/.vim/bundle
-git clone https://github.com/altercation/vim-colors-solarized.git
-#move
-mv vim-colors-solarized ~/.vim/bundle/
+#if statement to check if .vim and .vimrc already exist
+if test -e .vim 
+then
+	#if .vim exist, check if .vimrc exists
+	if test -e .vimrc
+	#if both exist, create a dir and move both
+	then
+		mkdir old_vim_config
+		mv .vim old_vim_config
+		mv .vimrc old_vim_config
+	#if only .vim exists
+	else
+	 	 mkdir old_vim_config
+	 	 mv .vim old_vim_config
+	fi
+else
+	#if only .vimrc exists
+	if test -e .vimrc
+	then
+		mkdir old_vim_config
+		mv .vimrc
+	fi
+fi
 
-#Plugin #4 - Syntastic
-cd ~/.vim/bundle
-git clone https://github.com/scrooloose/syntastic.git
-#:Helptags
-
-#Plugin #5 - NERDcommenter
-cd ~/.vim/bundle
-git clone https://github.com/scrooloose/nerdcommenter.git
-
-#Plugin #6 - Surround
-cd ~/.vim/bundle
-git clone https://github.com/tpope/vim-surround.git
-#:Helptags
-#:help surround
-
-#Plugin #7 - EasyMotion
-cd ~/.vim/bundle
-git clone https://github.com/Lokaltog/vim-easymotion.git 
-
-#Plugin #8 - Gundo
-git clone https://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
-
-#Plugin #9 - Fugitive
-cd ~/.vim/bundle
-git clone http://github.com/tpope/vim-fugitive.git #vim -s NONE -c "helptags vim-fugitive/doc" -c
+#go to the temp folder and move .vimrc and .vim out to desktop
+cd
+cd temp/temp/HIF31EW
+mv .vim ..
+mv .vimrc ..
+rm -rf temp/temp/HIF31W
