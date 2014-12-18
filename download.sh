@@ -4,10 +4,6 @@
 #move to $HOME to sort everything later
 cd
 
-#creat a temp dir to place the cloned github repo
-mkdir temp.temp.HIF31EW
-cd temp.temp.HIF31EW
-
 #download the repo
 git clone https://github.com/atan009/vimrc
 
@@ -44,7 +40,7 @@ fi
 
 #go to the temp folder and move .vimrc and .vim out to desktop
 cd
-cd temp/temp/HIF31EW
+cd vimrc 
 mv .vim ..
 mv .vimrc ..
-rm -rf temp/temp/HIF31W
+rm -rf vimrc
