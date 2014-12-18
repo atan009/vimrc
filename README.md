@@ -1,58 +1,32 @@
-Modifications:
----------------
-To remove a plugin you don't like or feel is unimportant, just remove the name of that plugin in the bundle directory. To add a plugin, you should check whether it is first compatible with the other plugins. If it is, then you may simply install it by following the installation directions given by the creator. Then depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
-
 Installation:
 --------------
-Before install, make sure you have:`git`, `vim`, and `Subversion`(svn)
+Before install, make sure you have:`git`, and `vim`
+To download the pre-configured `vim`, type the command below to download `.vimrc` and all the plugins that we have.
 
-To install `git`, type
-
-	sudo apt-get install git-core
-
-or check [Git: Getting Started - Installing Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for instruction to install `git`.
-
-To install `vim`, type
-	
-	sudo apt-get install vim
-
-or check [The Vim Editor: Downloading Vim](http://www.vim.org/download.php) for instruction to install `vim`
-
-To install `svn`, type
-	
-	apt-get install subversion
-	apt-get install libapache2-svn
-
-or go to [Apache Subversion Binary Packages](https://subversion.apache.org/packages.html) to find the corresponding download command.
-	
-After everything is installed, type the command below to download `.vimrc` and all the plugins that we have.
-
-	wget https://github.com/atan009/vimrc/raw/master/download.sh && sh download.sh
+	curl https://github.com/atan009/vimrc/raw/master/download.sh && sh
 
 
-`Vim` :neckbeard::zzz:
+`vim` :neckbeard::zzz:
 -----------------------
-`Vim` is a text editor. It is similar to `Vi`, but can be considered to have more features. `Vim` itself is also similar to an IDE. It is capable of compiling files and running executables as well. `Vim` is very different from what most users are used to, however learning it usually proves to quite convenient and efficient.
+`vim` is a text editor. It is similar to `vi`, but can be considered to have more features. `vim` itself is also similar to an IDE. It is capable of compiling files and running executables as well. `vim` is very different from what most users are used to, however learning it usually proves to quite convenient and efficient.
 
-TL;DR `Vim` is an upgrade for `Vi` :smile:
+TL;DR `vim` is an upgrade for `vi` :smile:
 
 More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
-`Vimrc` :no_mouth::question:
-----
-`Vimrc` is a file that allows user to configure personal setting in `vim`. It exists in the `$HOME` directory in Unix. If one does not exist, create a filed named "`.vimrc`" in your `$HOME` directory. 
+`.vimrc` :no_mouth::question:
+-----------------------------
+`.vimrc` is a file that allows user to configure personal setting in `vim`. It exists in the `$HOME` directory in Unix. After install our pre-configured `vim`, you will get a `.vimrc` file with all the configurations that we think are useful. Feel free to comment in and out the configurations. 
 
-	touch .vimrc
-	vim .vimrc
-
-When the file first opened, there should be nothing in your `.vimrc` file. You can add any configuration you want to it. 
-
-`Plugin`:
+Plugin:
 -------
-Earlier we mentioned `plugin` when we talked about colorscheme and spell-checking in `.vimrc` configuration. What is `plugin` and how is it different from `.vimrc`? Plugin is a `Vim` script file that will load automatically when `Vim` starts. Most plugins are usefule features that people created to make Vim more user-friendly. Here we will introduce some plugins that are useful.
+What is plugin and how is it different from `.vimrc`? Plugin is a `vim` script file that will load automatically when `vim` starts. Most plugins are usefule features that people created to make `vim` more user-friendly. Here we will introduce some plugins that are commonly used.
+
+#####Modifications:
+To remove a plugin you don't like or feel is unimportant, just remove the name of that plugin in the bundle directory. To add a plugin, you should check whether it is first compatible with the other plugins. If it is, then you may simply install it by following the installation directions given by the creator. Then depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
 
 ###Plugin #0 - `Pathogen`:
-------------------------
+--------------------------
 `Pathogen` is a plugin that will make installing other plugins easier. It also allows runtime files to be installed in their own private directories. `Pathogen` is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but `Pathogen` appeared to be a more basic one.
 
 Alternate Plugin Manager: [Github MarcWeber/vim-addon-manager] (https://github.com/MarcWeber/vim-addon-manager)
