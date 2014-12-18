@@ -1,12 +1,17 @@
+Introduction:
+-------------
+This is a pre-configured vim package that has .vimrc and .vim with nine useful plugins that we selected.
+There will be brief introductions to vim, .vimrc, and the nine plugins that we included in the .vim folder.
+
 Installation:
 --------------
-Before install, make sure you have:`git`, and `vim`.
+Before install, make sure you have: git, and vim.
 
-To download the pre-configured `vim`, type the command below to download `.vimrc` and all the plugins that we have.
+To download the pre-configured vim, type the command below to download .vimrc and all the plugins that we have.
 
 	sh <(curl https://github.com/atan009/vimrc/raw/master/download.sh -L)
 
-If the user already have .vim and `.vimrc` files, this installation will create a new directory called "old_vim_config" and move all the old files in it. 
+If the user already have .vim and .vimrc files, this installation will create a new directory called "old_vim_config" and move all the old files in it. 
 
 vim :neckbeard::zzz:
 -----------------------
