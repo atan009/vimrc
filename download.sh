@@ -43,4 +43,5 @@ cd
 cd vimrc 
 mv .vim ..
 mv .vimrc ..
+cd
 rm -rf vimrc
