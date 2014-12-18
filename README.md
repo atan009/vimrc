@@ -5,7 +5,7 @@ There will be brief introductions to vim, .vimrc, and the nine plugins that we i
 
 Installation:
 --------------
-Before install, make sure you have: git, and vim.
+Before install, make sure you have: git and vim.
 
 To download the pre-configured vim, type the command below to download .vimrc and all the plugins that we have.
 
@@ -30,7 +30,7 @@ Plugin:
 Plugin is a vim script file that will load automatically when vim starts. Most plugins are usefule features that people created to make vim more user-friendly and a lot of them are similar. Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. Here we will introduce some plugins that are commonly used.
 
 #####Modifications:
-If the user wants to remove a plugin, just remove the directory of that plugin in the bundle directory. If the user wants to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, the user may need to modify the `.vimrc` file to fit the plugins needs.
+If the user wants to remove a plugin, just remove the directory of that plugin in the bundle directory. If the user wants to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, the user may need to modify the .vimrc file to fit the plugins needs.
 
 ###Plugin #0 - Pathogen:
 --------------------------
@@ -85,9 +85,9 @@ More info at: [Github scrooloose/syntastic] (https://github.com/scrooloose/synta
 -----------------------------
 NERDcommenter is a plugin that makes commenting easier. It also makes removing comments easier. All of the commands should be done in either visual or normal mode. Type `\cc` to comment out the line highlighted by the cursor. 
 
-	Type `\ci` to toggle the state of the highlighted lines. 
-	Type `\cu` to uncomment the line that the cursor is highlighting. 
-	Type `\cs` to comment the highlighted using `/*` and `*/` rather than the ordinary `//`.
+	\ci  toggle the state of the highlighted lines. 
+	\cu  uncomment the line that the cursor is highlighting. 
+	\cs  comment the highlighted using /* and */ rather than the ordinary //
 
 ![NC1](http://i.imgur.com/BU8Ffmg.gif) ![NC2](http://i.imgur.com/C7ZMtP7.gif)
 
@@ -97,14 +97,15 @@ More info at: [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/n
 ------------------------
 Surround aids the user in adding, changing or deleting mappings. This includes parentheses, brackets and more. 
 
-	 `cs[first character][second character]` 
-	replace occurences of the first character with the second character on the highlighted string of characters 
+	cs[first character][second character] 
+			replace occurences of the first character with the second character 
+			on the highlighted string of characters 
 	
-	`ds"` 
-	remove the delimiters. 
+	ds" 
+			remove the delimiters
 
-	`yssb` or `yss)`
-	surround an entire line with parentheses 
+	yssb or yss)
+			surround an entire line with parentheses 
 
 ![Surround1](http://i.imgur.com/7BjSTfR.gif) ![Surround2](http://i.imgur.com/upeOBA1.gif)
 
