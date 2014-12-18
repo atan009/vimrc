@@ -5,8 +5,8 @@
 cd
 
 #creat a temp dir to place the cloned github repo
-mkdir temp/temp/HIF31EW
-cd temp/temp/HIF31EW
+mkdir temp.temp.HIF31EW
+cd temp.temp.HIF31EW
 
 #download the repo
 git clone https://github.com/atan009/vimrc
