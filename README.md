@@ -10,7 +10,7 @@ Installation:
 --------------
 Before installng, make sure you have git and vim.
 
-To download the pre-configured vim, type the command below to download .vimrc and all the included plugins.
+Type the command below to download .vimrc and all the included plugins.
 
 	sh <(curl https://github.com/atan009/vimrc/raw/master/download.sh -L)
 
@@ -18,15 +18,17 @@ If the user already has .vim and .vimrc files, this installation will create a n
 
 vim :neckbeard::zzz:
 -----------------------
-Vim is a text editor that many programmers love to use. Not is vim acailable on almost every Unix system, it also has a lot of powerful shortcuts that allows the users to do almost everything on the home tow. For instance, the user can jump to any line by typing `<linenumber> g`. Learning vim usually proves to be convenient and efficient.
+Vim is a text editor that many programmers love to use. Not only is vim acailable on almost every Unix system, it also has a lot of powerful shortcuts that allows the users to do almost everything on the home tow. For instance, the user can jump to any line by typing `<linenumber> g`. Learning vim usually proves to be convenient and efficient.
 
 To see what other programmers think about vim, go to [Stackoverflow: Is learning VIM worth the effort?](http://stackoverflow.com/questions/597077/is-learning-vim-worth-the-effort) 
+
 To see what shortcuts other programmers love to use, go to [Stackoverflow: What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
+
 To learn more about what vim can do, go to [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
 .vimrc :no_mouth::question:
 -----------------------------
-After reading vimtutor, the first thing the users should do is to edit their .vimrc file. .vimrc is a file that allows user to configure personal setting in vim. It exists in the `$HOME` directory in Unix. Although vim comes with many shortcuts, there are some features that users can only unlock with configuring their .vimrc file. For instance, to make vim shows line number, the user needs to add `set number` in the .vimrc file. 
+After reading vimtutor, the first thing the users should do is to edit their .vimrc file. .vimrc is a file that allows user to configure personal settings in vim. Although vim comes with many shortcuts, there are some features that users can only unlock with configuring their .vimrc file. For instance, to make vim shows line number, the user needs to add `set number` in the .vimrc file. 
 
 The .vimrc in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the .vimrc file and the user decides to use some of the configurations that was not included, just take out the comments. 
 
@@ -34,7 +36,7 @@ Remember, it is always good to understand what each line of the configuration do
 
 Plugin:
 -------
-Even with vim and .vimrc, there are some features that users would wish vim could do. Simple tasks like commenting a paragraph or jumping between folders within a file are somthing that many programmers would love to have. As a result, a lot of programmers started to write their own vim script file and enable these features. The vim script file that they write are called Plugin.Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. 
+Even with vim and .vimrc, there are some features that users would wish vim could do. Simple tasks like commenting a paragraph or jumping between folders within a file are something that many programmers would love to be able to do. As a result, a lot of programmers started to write their own vim script file and enable these features. The vim script file that they write are called Plugin.Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. 
 
 In this pre-configured vim package, there are nine plugins that are popular amonog the vim-lovers:
 	
@@ -54,9 +56,9 @@ If the user wants to remove a plugin, just remove the directory of that plugin i
 
 ###Plugin #0 - Pathogen:
 --------------------------
-Pathogen is a plugin that will make installing other plugins easier. It also allows runtime files to be installed in their own private directories. Pathogen is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but Pathogen appeared to be a more basic one.
+Pathogen is a plugin that will make installing other plugins easier. It also allows runtime files to be installed in their own private directories. Pathogen is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but Pathogen appeared to be the most basic one.
 
-Alternate Plugin Manager: [Github MarcWeber/vim-addon-manager] (https://github.com/MarcWeber/vim-addon-manager)
+Alternate Plugin Manager include [Github MarcWeber/vim-addon-manager] (https://github.com/MarcWeber/vim-addon-manager)
 , [Github gmarik/Vundle.vim] (https://github.com/gmarik/Vundle.vim)
 , [Github Shougo/neobundle.vim] (https://github.com/Shougo/neobundle.vim)
 
@@ -64,13 +66,17 @@ More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen
 
 ###Plugin #1 - NERDtree:
 -------------------------
-NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree is installed as well as tell you the many capabilities of NERDtree such as bookmarking directories/files. However, this tutorial will only cover how to view your files in a tree form :+1:. In this help page, type `:NERDTree *ONE OF YOUR ACTUAL DIRECTORIES`. On the left, it should now display all the directories inside your chosen directory. 
+NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree allows the users to bookmark directories/files, open selected file within a file, checkout different folders, etc. 
 
-You can use the arrow keys to navigate between files/directories and press `<ENTER>` to read into it. To close NERDtree type `NERDTreeClose`. To open it again, type `:NERDTree *an EXISTING directory`.
+After installing NERDtree, first the user will need to add `map <C-n> :NERDTreeToggle<CR>` in .vimrc. This enable the shortcut ctrl-n to open up NERDtree and view all the files in a tree form :+1:. 
+
+User can navigate between files and firectories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
 
 ![NT2](http://i.imgur.com/3OCe5YM.gif)
 
-More info at: [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
+For more infomation about the creater, check [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
+
+For more tips on NERDtree, go to [tuts+: Vim Essential Plugin: NERDTree](http://code.tutsplus.com/tutorials/vim-essential-plugin-nerdtree--net-19692)
 
 ###Plugin #2 - SuperTab:
 --------------------------
