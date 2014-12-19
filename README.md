@@ -170,11 +170,11 @@ Alternate color schemes include [Github sjl/badwolf] (https://github.com/sjl/bad
 
 ###Plugin #8 - Surround:
 ------------------------
-Surround aids you in adding, changing or deleting mappings. This includes parentheses, brackets and more. 
+Surround aids you in adding, changing or deleting delimiters. This includes parentheses, brackets and more. 
 
 	cs[first character][second character] 
 			replace occurences of the first character with the second character 
-			on the highlighted string of characters 
+			on the highlighted string of characters
 	
 	ds" 
 			remove the delimiters
