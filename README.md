@@ -80,7 +80,7 @@ For more tips on NERDtree, go to [tuts+: Vim Essential Plugin: NERDTree](http://
 
 ###Plugin #2 - SuperTab:
 --------------------------
-SuperTab aids the user in quickly typing in strings of characters, but only already existing ones. This is useful for users that enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which the user can choose the correct one.
+SuperTab aids the user in quickly typing in strings of characters, but only pre-existing ones. This is useful for users that enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which the user can choose the correct one by type `<TAB>` to alternate between different words.
 
 ![ST1](http://i.imgur.com/i12YWak.gif)
 
@@ -90,6 +90,18 @@ More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 -------------------------
 Solarized changes the colorscheme of the vim editor. Often times, the default is not the best. It can be extremely irritable when you cannot differentiate between different types of files in vim as well as the variety of things within source code. It is possible to change the font and customize the colors to your own
 preference.
+
+In the .vimrc file, type in below configuration to enable solarized colorscheme:
+
+	"for light background
+	syntax enable
+	set background=light
+	colorscheme solarized
+
+	"for dark background
+	syntax enable
+	set background=dark
+	colorscheme solarized
 
 ![Solarized2](http://i.imgur.com/HRqwlqz.png) ![Solarized3](http://i.imgur.com/sQKfCbm.png)
 
