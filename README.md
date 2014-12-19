@@ -1,4 +1,4 @@
-Introduction:
+A simple and effective vim configuation
 -------------
 Getting started with vim could be a really difficult and boring task. Although vim is a really fun and easy tool, it is so different from Geany or Cloud9. This pre-configured vim package is something that can help anyone who just started to use vim enjoy it as much as we do. 
 
@@ -14,7 +14,7 @@ Type the command below to download `.vimrc` and all the included plugins.
 
 	sh <(curl https://github.com/atan009/vimrc/raw/master/download.sh -L)
 
-If the user already has .vim and `.vimrc` files, this installation will create a new directory called "old_vim_config" and move all the old files into it. 
+If the you already have .vim and `.vimrc` files, this installation will create a new directory called "old_vim_config" and move all the old files into it. 
 
 vim :neckbeard::zzz:
 -----------------------
@@ -28,9 +28,9 @@ To learn more about what vim can do, go to [The Vim Editor: What Vim Can Do] (ht
 
 `.vimrc` :no_mouth::question:
 -----------------------------
-After reading vimtutor, the first thing the users should do is to edit their `.vimrc` file. `.vimrc` is a file that allows the user to configure personal settings in vim. Although vim comes with many shortcuts, there are some features that users can only unlock with configuring their `.vimrc` file. For instance, to make vim show line numbers, the user needs to add `set number` in the `.vimrc` file. 
+`.vimrc` is a file that allows you to configure personal settings in vim. Although vim comes with many shortcuts, there are some features that you can only unlock with configuring their `.vimrc` file. For instance, to make vim show line numbers, the user needs to add `set number` in the `.vimrc` file. 
 
-The `.vimrc` in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the `.vimrc` file and the user decides to use some of the configurations that was not included, just take out the comments. 
+The `.vimrc` in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the `.vimrc` file and you decides to use some of the configurations that was not included, just take out the comments.
 
 Remember, it is always good to understand what each line of the configuration does before leaving it in the `.vimrc` file.
 
@@ -54,7 +54,7 @@ Surround | mapping tool
 Pathogen | simple plugin installation package
 
 #####Modifications:
-If the user wants to remove a plugin, just remove the directory of that plugin in the bundle directory. If the user wants to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, the user may need to modify the `.vimrc` file to fit the plugins needs.
+If you want to remove a plugin, just remove the directory of that plugin in the bundle directory. If you want to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
 
 ###Plugin #0 - Pathogen:
 --------------------------
@@ -68,11 +68,11 @@ More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen
 
 ###Plugin #1 - NERDtree:
 -------------------------
-NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree allows the users to bookmark directories/files, open selected file within a file, checkout different folders, etc. 
+NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree allows you to bookmark directories/files, open selected file within a file, checkout different folders, etc. 
 
-After installing NERDtree, first the user will need to add `map <C-n> :NERDTreeToggle<CR>` in `.vimrc`. This enables the shortcut ctrl-n to open up NERDtree and view all the files in a tree form :+1:. 
+After installing NERDtree, first you will need to add `map <C-n> :NERDTreeToggle<CR>` in `.vimrc`. This enables the shortcut ctrl-n to open up NERDtree and view all the files in a tree form :+1:. 
 
-The user can navigate between files and directories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
+You can navigate between files and directories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
 
 ![NT2](http://i.imgur.com/rIwg8Wa.gif)
 
@@ -82,7 +82,7 @@ For more tips on NERDtree, go to [tuts+: Vim Essential Plugin: NERDTree](http://
 
 ###Plugin #2 - SuperTab:
 --------------------------
-SuperTab aids the user in quickly typing in strings of characters, but only pre-existing ones. This is useful for users that enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which the user can choose the correct one by pressing `<TAB>` to alternate between different words.
+SuperTab aids you in quickly typing in strings of characters, but only pre-existing ones. This is useful if you enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which you can choose the correct one by pressing `<TAB>` to alternate between different words.
 
 ![ST1](http://i.imgur.com/syafUJu.gif)
 
@@ -134,7 +134,7 @@ For more information about NERDcommenter, go to [Github scrooloose/nerdcommenter
 
 ###Plugin #6 - Surround:
 ------------------------
-Surround aids the user in adding, changing or deleting mappings. This includes parentheses, brackets and more. 
+Surround aids you in adding, changing or deleting mappings. This includes parentheses, brackets and more. 
 
 	cs[first character][second character] 
 			replace occurences of the first character with the second character 
@@ -191,7 +191,7 @@ For more explanation on Gundo, go to [Gundo: Graph your Vim undo tree in style.]
 
 ###Plugin #9 - Fugitive:
 ------------------------
-As a git user, fugitive is probably the most useful plugin in this tutorial. It is a Git wrapper that collects and creates a lot of shortcuts for git. With fugitive, users can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
+As a git user, fugitive is probably the most useful plugin in this tutorial. It is a Git wrapper that collects and creates a lot of shortcuts for git. With fugitive, you can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
 
 To make it easier, here are a list of fugitive commands:
 	
