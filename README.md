@@ -1,7 +1,10 @@
 Introduction:
 -------------
-This is a pre-configured vim package that has .vimrc and .vim with nine useful plugins that we selected.
-There will be brief introductions to vim, .vimrc, and the nine plugins that we included in the .vim folder.
+Getting started with vim could be a really difficult and boring task. Although vim is a really fun and easy tool, it is so different from Geany or Cloud9. This pre-configured vim package is something that hopefully can help anyone who just started to use vim like it as much as we do. 
+
+In the package, there are a pre-configure .vimrc with all the configurations that can help coding faster. Wonder why? Download it and you can see the result. 
+
+As for the nine selected plugins, each are popular ones that every vim users should know. Want to jump between folders with a few keys? Want to comment a whole paragraph with just a snap? The nine selected plugins have features that make programming easier than ever. 
 
 Installation:
 --------------
