@@ -72,7 +72,7 @@ After installing NERDtree, first the user will need to add `map <C-n> :NERDTreeT
 
 User can navigate between files and firectories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
 
-![NT2](http://i.imgur.com/3OCe5YM.gif)
+![NT2](http://i.imgur.com/rIwg8Wa.gifv)
 
 For more infomation about the creater, check [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
 
@@ -105,9 +105,9 @@ In the .vimrc file, type in below configuration to enable solarized colorscheme:
 
 ![Solarized2](http://i.imgur.com/HRqwlqz.png) ![Solarized3](http://i.imgur.com/sQKfCbm.png)
 
-More info at: [Github altercation/vim-colors-solarized] (https://github.com/altercation/vim-colors-solarized)
+For more information about solarized, go to [Github altercation/vim-colors-solarized] (https://github.com/altercation/vim-colors-solarized)
 
-Alternate color scheme: [Github sjl/badwolf] (https://github.com/sjl/badwolf/)
+Alternate color schemes include [Github sjl/badwolf] (https://github.com/sjl/badwolf/)
 					, [Github tomasr/molokai] (https://github.com/tomasr/molokai)
 
 ###Plugin #4 - Syntastic:
@@ -117,7 +117,8 @@ to it.
 
 ![Syntastic](http://i.imgur.com/LPHf6U7.gif)
 
-More info at: [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
+For more information about Syntastic, go to [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
+
 
 ###Plugin #5 - NERDcommenter:
 -----------------------------
@@ -129,7 +130,7 @@ NERDcommenter is a plugin that makes commenting easier. It also makes removing c
 
 ![NC1](http://i.imgur.com/BU8Ffmg.gif) ![NC2](http://i.imgur.com/C7ZMtP7.gif)
 
-More info at: [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
+For more information about NERDcommenter, go to [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 
 ###Plugin #6 - Surround:
 ------------------------
@@ -149,7 +150,7 @@ Surround aids the user in adding, changing or deleting mappings. This includes p
 
 ![Surround3](http://i.imgur.com/Ep8zeqz.gif) ![Surround4](http://i.imgur.com/VdIhp6T.gif)
 
-More info at: [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
+For more informaiton about Surround, go to [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
 
 ###Plugin #7 - EasyMotion:
 --------------------------
