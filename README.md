@@ -72,7 +72,7 @@ After installing NERDtree, first the user will need to add `map <C-n> :NERDTreeT
 
 User can navigate between files and firectories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
 
-![NT2](http://i.imgur.com/rIwg8Wa.gifv)
+![NT2](http://i.imgur.com/rIwg8Wa.gif)
 
 For more infomation about the creater, check [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
 
