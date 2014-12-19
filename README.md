@@ -8,29 +8,46 @@ As for the nine selected plugins, each are popular ones that every vim users sho
 
 Installation:
 --------------
-Before install, make sure you have: git and vim.
+Before installng, make sure you have git and vim.
 
-To download the pre-configured vim, type the command below to download .vimrc and all the plugins that we have.
+To download the pre-configured vim, type the command below to download .vimrc and all the included plugins.
 
 	sh <(curl https://github.com/atan009/vimrc/raw/master/download.sh -L)
 
-If the user already have .vim and .vimrc files, this installation will create a new directory called "old_vim_config" and move all the old files in it. 
+If the user already has .vim and .vimrc files, this installation will create a new directory called "old_vim_config" and move all the old files into it. 
 
 vim :neckbeard::zzz:
 -----------------------
-Vim is a text editor. It is similar to vi, but can be considered to have more features. Vim itself is also similar to an IDE. It is capable of compiling files and running executables as well. Vim is very different from what most users are used to, however learning it usually proves to quite convenient and efficient.
+Vim is a text editor that many programmers love to use. Not is vim acailable on almost every Unix system, it also has a lot of powerful shortcuts that allows the users to do almost everything on the home tow. For instance, the user can jump to any line by typing `<linenumber> g`. Learning vim usually proves to be convenient and efficient.
 
-TL;DR Vim is an upgrade for vi :smile:
-
-More info at: [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
+To see what other programmers think about vim, go to [Stackoverflow: Is learning VIM worth the effort?](http://stackoverflow.com/questions/597077/is-learning-vim-worth-the-effort) 
+To see what shortcuts other programmers love to use, go to [Stackoverflow: What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
+To learn more about what vim can do, go to [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
 .vimrc :no_mouth::question:
 -----------------------------
-.vimrc is a file that allows user to configure personal setting in vim. It exists in the `$HOME` directory in Unix. After install our pre-configured vim, you will get a .vimrc file with all the configurations that we think are useful. Feel free to comment out or take in any configurations that you want. 
+After reading vimtutor, the first thing the users should do is to edit their .vimrc file. .vimrc is a file that allows user to configure personal setting in vim. It exists in the `$HOME` directory in Unix. Although vim comes with many shortcuts, there are some features that users can only unlock with configuring their .vimrc file. For instance, to make vim shows line number, the user needs to add `set number` in the .vimrc file. 
+
+The .vimrc in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the .vimrc file and the user decides to use some of the configurations that was not included, just take out the comments. 
+
+Remember, it is always good to understand what each line of the configuration does before leaving it in the .vimrc file.
 
 Plugin:
 -------
-Plugin is a vim script file that will load automatically when vim starts. Most plugins are usefule features that people created to make vim more user-friendly and a lot of them are similar. Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. Here we will introduce some plugins that are commonly used.
+Even with vim and .vimrc, there are some features that users would wish vim could do. Simple tasks like commenting a paragraph or jumping between folders within a file are somthing that many programmers would love to have. As a result, a lot of programmers started to write their own vim script file and enable these features. The vim script file that they write are called Plugin.Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. 
+
+In this pre-configured vim package, there are nine plugins that are popular amonog the vim-lovers:
+	
+	Pathogen	   simple plugin installation package
+	NERDtree	   easily browse and access files and directories in tree form
+	SuperTab	   fast typing filled-in aid
+	Solarized	   stylish colorscheme
+	Syntasitic	   best syntax error detector
+	NERDcommenter  commenting helper
+	Surround	   mapping tool
+	EasyMotion	   fast searching/jumping tool
+	Gundo		   simplistic undo tree
+	Fugitive	   git wrapper
 
 #####Modifications:
 If the user wants to remove a plugin, just remove the directory of that plugin in the bundle directory. If the user wants to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, the user may need to modify the .vimrc file to fit the plugins needs.
