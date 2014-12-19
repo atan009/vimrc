@@ -86,7 +86,12 @@ Command | Effect
 \cu | uncomment the line that the cursor is highlighting. 
 \cs | comment the highlighted using /* and */ rather than the ordinary //
 
-![NC1](http://i.imgur.com/BU8Ffmg.gif) ![NC2](http://i.imgur.com/C7ZMtP7.gif)
+Below shows example of using \ci and \cu to comment out single line.
+![Comment_sin](http://i.imgur.com/2OP1EO8.gif)
+
+Below shows example of using \cs to comment out multiple lines.
+![Comment_mul](http://i.imgur.com/TsG27Vk.gif)
+
 
 For more information about NERDcommenter, go to [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 
