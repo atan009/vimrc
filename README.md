@@ -6,6 +6,14 @@ In the package, there is a pre-configured `.vimrc` with all the configurations t
 
 As for the nine selected plugins, each are popular ones that every vim users should know. Want to jump between folders with a few keys? Want to comment a whole paragraph with just a snap? The nine selected plugins have features that make programming easier than ever. 
 
+The `.vimrc` in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the `.vimrc` file and you decides to use some of the configurations that was not included, just take out the comments.
+
+To see what other programmers think about vim, go to [Stackoverflow: Is learning VIM worth the effort?](http://stackoverflow.com/questions/597077/is-learning-vim-worth-the-effort) 
+
+To see what shortcuts other programmers love to use, go to [Stackoverflow: What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
+
+To learn more about what vim can do, go to [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
+
 Installation:
 --------------
 Before installng, make sure you have git and vim.
@@ -15,24 +23,6 @@ Type the command below to download `.vimrc` and all the included plugins.
 	sh <(curl https://github.com/atan009/vimrc/raw/master/download.sh -L)
 
 If the you already have .vim and `.vimrc` files, this installation will create a new directory called "old_vim_config" and move all the old files into it. 
-
-vim :neckbeard::zzz:
------------------------
-Vim is a text editor that many programmers love to use. Not only is vim available on almost every Unix system, it also has a lot of powerful shortcuts that allow the users to do almost everything on the home row. For instance, the user can jump to any line by typing `<linenumber> g`. Learning vim usually proves to be convenient and efficient.
-
-To see what other programmers think about vim, go to [Stackoverflow: Is learning VIM worth the effort?](http://stackoverflow.com/questions/597077/is-learning-vim-worth-the-effort) 
-
-To see what shortcuts other programmers love to use, go to [Stackoverflow: What is your most productive shortcut with Vim?](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
-
-To learn more about what vim can do, go to [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
-
-`.vimrc` :no_mouth::question:
------------------------------
-`.vimrc` is a file that allows you to configure personal settings in vim. Although vim comes with many shortcuts, there are some features that you can only unlock with configuring their `.vimrc` file. For instance, to make vim show line numbers, the user needs to add `set number` in the `.vimrc` file. 
-
-The `.vimrc` in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the `.vimrc` file and you decides to use some of the configurations that was not included, just take out the comments.
-
-Remember, it is always good to understand what each line of the configuration does before leaving it in the `.vimrc` file.
 
 Plugin:
 -------
