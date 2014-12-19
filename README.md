@@ -40,16 +40,18 @@ Even with vim and .vimrc, there are some features that users would wish vim coul
 
 In this pre-configured vim package, there are nine plugins that are popular among vim-lovers:
 	
-	Pathogen	   simple plugin installation package
-	NERDtree	   easily browse and access files and directories in tree form
-	SuperTab	   fast typing filled-in aid
-	Solarized	   stylish colorscheme
-	Syntasitic	   best syntax error detector
-	NERDcommenter  commenting helper
-	Surround	   mapping tool
-	EasyMotion	   fast searching/jumping tool
-	Gundo		   simplistic undo tree
-	Fugitive	   git wrapper
+Plugin | Description
+--- | ---
+Fugitive | git wrapper
+Syntasitic |best syntax error detector
+NERDcommenter | commenting helper
+EasyMotion | fast searching/jumping tool
+NERDtree | easily browse and access files and directories in tree form
+SuperTab | fast typing filled-in aid
+Gundo | simplistic undo tree
+Solarized | stylish colorscheme
+Surround | mapping tool
+Pathogen | simple plugin installation package
 
 #####Modifications:
 If the user wants to remove a plugin, just remove the directory of that plugin in the bundle directory. If the user wants to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, the user may need to modify the .vimrc file to fit the plugins needs.
@@ -93,11 +95,6 @@ preference.
 
 In the .vimrc file, type in below configuration to enable solarized colorscheme:
 
-	"for light background
-	syntax enable
-	set background=light
-	colorscheme solarized
-
 	"for dark background
 	syntax enable
 	set background=dark
@@ -122,11 +119,14 @@ For more information about Syntastic, go to [Github scrooloose/syntastic] (https
 
 ###Plugin #5 - NERDcommenter:
 -----------------------------
-NERDcommenter is a plugin that makes commenting easier. It also makes removing comments easier. All of the commands should be done in either visual or normal mode. Type `\cc` to comment out the line highlighted by the cursor. 
+NERDcommenter is a plugin that makes commenting easier. It also makes removing comments easier. All of the commands can be done in either visual or normal mode.
 
-	\ci  toggle the state of the highlighted lines. 
-	\cu  uncomment the line that the cursor is highlighting. 
-	\cs  comment the highlighted using /* and */ rather than the ordinary //
+Command | Effect
+--- | ---
+\cc | to comment out the line highlighted by the cursor.
+\ci | toggle the state of the highlighted lines. 
+\cu | uncomment the line that the cursor is highlighting. 
+\cs | comment the highlighted using /* and */ rather than the ordinary //
 
 ![NC1](http://i.imgur.com/BU8Ffmg.gif) ![NC2](http://i.imgur.com/C7ZMtP7.gif)
 
@@ -177,7 +177,7 @@ In vim, all the changes you make to your file are saved as a tree. Gundo is a pl
 
 To use Gundo, first you have to add a mapping to your .vimrc file. Here we use `<F5>` as example. 
 
-	nnoremap <F5> :GUndoToggle<CR>
+	nnoremap <F5> :GundoToggle<CR>
 
 Now when we press `<F5>` in a file, Gundo will show us a graph of the tree of changes. Our current position in the undo tree is the one marker with `@`. To move between the graph, use `j` and `k` keys. Like vim, `gg` jumps to top of the file while `G` brings you ot the bottom of the file.  
 
@@ -195,13 +195,15 @@ As a git user, fugitive is probably the most useful plugin in this tutorial. It 
 
 To make it easier, here are a list of fugitive commands:
 	
-	:Gstatus	git status
-	:Gwrite		git add (filename)
-	:Gcommit	git commit
-	:Gblame		git blame
-	:Gmove		git mv
-	:Ggrep		git grep
-	:Gread		git checkout --filename
+Fugitive Command | Git Command
+--- | ---
+:Gstatus | git status
+:Gwrite	| git add (filename)
+:Gcommit | git commit
+:Gblame	| git blame
+:Gmove | git mv
+:Ggrep | git grep
+:Gread | git checkout --filename
 
 The gif belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
 
