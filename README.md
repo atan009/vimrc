@@ -44,7 +44,7 @@ Plugin | Description
 #####Modifications:
 If you want to remove a plugin, just remove the directory of that plugin in the bundle directory. If you want to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
 
-###Plugin #0 - Fugitive:
+###Plugin #1 - Fugitive:
 ------------------------
 As a git user, fugitive is probably the most useful plugin in this tutorial. It is a Git wrapper that collects and creates a lot of shortcuts for git. With fugitive, you can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
 
@@ -66,7 +66,7 @@ The gif belows demonstrates how I check the status using :Gstatus, add my README
 
 For more explanation on `Fugitive`, go to [Github tpope/vim-fugitive] (https://github.com/tpope/vim-fugitive)
 
-###Plugin #1 - Syntastic:
+###Plugin #2 - Syntastic:
 ---------------------------
 Syntastic is a plugin which will save all programmers time. It detects for syntax errors BEFORE you even compile. As all programmers know, these errors happen by mistake all the time and can be annoying after receiving those thousands of other logic errors. A highly recommended plugin for anyone who hates searching through their code for one syntax error. Errors are identified only after everytime the file is saved. When highlighting a line of error, the error will be displayed at the bottom of the terminal. A line of error will be show with `>>` next
 to it.
@@ -75,7 +75,7 @@ to it.
 
 For more information about Syntastic, go to [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
 
-###Plugin #2 - NERDcommenter:
+###Plugin #3 - NERDcommenter:
 -----------------------------
 NERDcommenter is a plugin that makes adding and removing comments easier. All of the commands can be done in either visual or normal mode.
 
@@ -95,11 +95,11 @@ Below shows example of using \cs to comment out multiple lines.
 
 For more information about NERDcommenter, go to [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 
-###Plugin #3 - EasyMotion:
+###Plugin #4 - EasyMotion:
 --------------------------
-EasyMotion helps you make large jump within a buffer easier and faster. It allows you to make jumps by searching up your destination. 
+EasyMotion helps you make large jump within a buffer easier and faster by searching up your destination. 
 
-For one character search, enter `<leader><leader>w` (in vim, `<leader>` means `\`). A word `Target:` will appear in the command line. Enter any character you want to search for and EasyMotion will highlight all the appearances of the character in the buffer. Enter the one you want to jump to and EasyMotion will take you there.
+For one character search, enter `\\w`. A word `Target:` will appear in the command line. Enter any character you want to search for and EasyMotion will highlight all the appearances of the character in the buffer. Enter the one you want to jump to and EasyMotion will take you there.
 
 ![EasyMotionW](http://i.imgur.com/OuA4tDm.gif)
 
@@ -114,13 +114,16 @@ After adding the configurations, you can search up word the way you do it in vim
 
 For more EasyMotion configuration and explanation, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
 
-###Plugin #4 - NERDtree:
+###Plugin #5 - NERDtree:
 -------------------------
 NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree allows you to bookmark directories/files, open selected file within a file, checkout different folders, etc. 
 
-After installing NERDtree, first you will need to add `map <C-n> :NERDTreeToggle<CR>` in `.vimrc`. This enables the shortcut ctrl-n to open up NERDtree and view all the files in a tree form :+1:. 
-
-You can navigate between files and directories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
+Command | Result
+--- | ---
+ctrl n | open NERDtree and view all files in tree form
+arrow keys | navigate between files and directories
+<ENTER> | read files or directories
+NERDTreeClose | close NERDtree
 
 ![NT2](http://i.imgur.com/rIwg8Wa.gif)
 
@@ -128,7 +131,7 @@ For more infomation about the creater, check [Github scrooloose/nerdtree] (https
 
 For more tips on NERDtree, go to [tuts+: Vim Essential Plugin: NERDTree](http://code.tutsplus.com/tutorials/vim-essential-plugin-nerdtree--net-19692)
 
-###Plugin #5 - SuperTab:
+###Plugin #6 - SuperTab:
 --------------------------
 SuperTab aids you in quickly typing in strings of characters, but only pre-existing ones. This is useful if you enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which you can choose the correct one by pressing `<TAB>` to alternate between different words.
 
@@ -136,15 +139,11 @@ SuperTab aids you in quickly typing in strings of characters, but only pre-exist
 
 More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
-###Plugin #6 - Gundo:
+###Plugin #7 - Gundo:
 ---------------------
-In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that displays your edit history in the form of a tree for you so, you can easily see the differences between the changes you made and jump back to any old version. 
+In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that displays your edit history in the form of a tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
 
-To use Gundo, first you have to add a mapping to your `.vimrc` file. Here we use `<F5>` as example. 
-
-	nnoremap <F5> :GundoToggle<CR>
-
-Now when we press `<F5>` in a file, Gundo will show us a graph of the tree of changes. Our current position in the undo tree is the one marker with `@`. To move between the graph, use `j` and `k` keys. Like vim, `gg` jumps to top of the file while `G` brings you ot the bottom of the file.  
+Press `<F5>` in a file to traverse the graph of the tree of changes. Our current position in the undo tree is the one marker with `@`. To move between the graph, use `j` and `k` keys. Like vim, `gg` jumps to top of the file while `G` brings you to the bottom of the file.  
 
 Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between the current state and selected state. 
 
@@ -154,46 +153,39 @@ To quit the undo tree, press `q`.
 
 For more explanation on Gundo, go to [Gundo: Graph your Vim undo tree in style.] (http://sjl.bitbucket.org/gundo.vim/)
 
-###Plugin #7 - Solarized:
+###Plugin #8 - Solarized:
 -------------------------
-Solarized changes the colorscheme of the vim editor. Often times, the default is not the best. It can be extremely irritating when you cannot differentiate between different types of files in vim, as well as, the variety of things within source code. It is possible to change the font and customize the colors to your own
-preference.
+Solarized changes the colorscheme of the vim editor. Often times, the default is not the best. It can be extremely irritating when you cannot differentiate between different types of files in vim. It is possible to change the font and customize the colors to your own preference.
 
-In the `.vimrc` file, type in below configuration to enable solarized colorscheme:
-
-	"for dark background
-	syntax enable
-	set background=dark
-	colorscheme solarized
-
-![Solarized2](http://i.imgur.com/HRqwlqz.png) ![Solarized3](http://i.imgur.com/sQKfCbm.png)
+![Solarized2](http://imgur.com/KZK4LlC)
 
 For more information about solarized, go to [Github altercation/vim-colors-solarized] (https://github.com/altercation/vim-colors-solarized)
 
 Alternate color schemes include [Github sjl/badwolf] (https://github.com/sjl/badwolf/)
 					, [Github tomasr/molokai] (https://github.com/tomasr/molokai)
 
-###Plugin #8 - Surround:
+###Plugin #9 - Surround:
 ------------------------
 Surround aids you in adding, changing or deleting delimiters. This includes parentheses, brackets and more. 
 
-	cs[first character][second character] 
-			replace occurences of the first character with the second character 
-			on the highlighted string of characters
-	
-	ds" 
-			remove the delimiters
+command | result
+--- | --- 
+cs<old char><new char> | replace occurences of the old char with the new char
+ds" | remove the delimiters
+yssb or yss) | surround an entire line with parentheses 
 
-	yssb or yss)
-			surround an entire line with parentheses 
+Below is an example of `cs"'`
+![surround_cs](http://i.imgur.com/vT6J5Vk.gif)
 
-![Surround1](http://i.imgur.com/7BjSTfR.gif) ![Surround2](http://i.imgur.com/upeOBA1.gif)
+Below is an examplp of `ds"`
+![surround_ds](http://i.imgur.com/PPAyLsa.gif)
 
-![Surround3](http://i.imgur.com/Ep8zeqz.gif) ![Surround4](http://i.imgur.com/VdIhp6T.gif)
+Below is an example of `yssb`
+![surround_yssb](http://i.imgur.com/SxEv9DN.gif)
 
 For more informaiton about Surround, go to [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
 
-###Plugin #9 - Pathogen:
+###Plugin #10 - Pathogen:
 --------------------------
 Pathogen is a plugin that will make installing other plugins easier. It also allows runtime files to be installed in their own private directories. Pathogen is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but Pathogen appeared to be the most basic one.
 
@@ -201,5 +193,5 @@ Alternate Plugin Manager include [Github MarcWeber/vim-addon-manager] (https://g
 , [Github gmarik/Vundle.vim] (https://github.com/gmarik/Vundle.vim)
 , [Github Shougo/neobundle.vim] (https://github.com/Shougo/neobundle.vim)
 
-More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen)
+More information can be found at [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen)
 
