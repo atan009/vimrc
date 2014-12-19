@@ -32,7 +32,7 @@ In this pre-configured vim package, there are nine plugins that are popular amon
 	
 Plugin | Description
 --- | ---
-Fugitive | git wrapper
+[Fugitive](https://github.com/atan009/vimrc#plugin-0---fugitive) | git wrapper
 Syntasitic |best syntax error detector
 NERDcommenter | commenting helper
 EasyMotion | fast searching/jumping tool
