@@ -53,14 +53,14 @@ To make it easier, here are a list of fugitive commands:
 Fugitive Command | Git Command
 --- | ---
 :Gstatus | git status
-:Gwrite	| git add (filename)
+:Gwrite	| git add <filename>
 :Gcommit | git commit
 :Gblame	| git blame
 :Gmove | git mv
 :Ggrep | git grep
-:Gread | git checkout --filename
+:Gread | git checkout --<filename>
 
-The gif belows demonstrates how I check the status using :Gstatus, add my README.md using :Gwrite, commit the file using :Gcommit, and push the file to my repo using :Gpush.
+The gif belows demonstrates how to check the status using :Gstatus, add README.md using :Gwrite, commit the file using :Gcommit, and push the file github repo using :Gpush.
 
 ![fugitive](http://imgur.com/Vqxu02C.gif)
 
@@ -103,12 +103,7 @@ For one character search, enter `\\w`. A word `Target:` will appear in the comma
 
 ![EasyMotionW](http://i.imgur.com/OuA4tDm.gif)
 
-EasyMotion also supports word search. To do this, add two configurations to your `.vimrc` file. 
-	
-	map / <Plug>(easymotion-sn)
-	omap / <Plug>(easymotion-tn)
-
-After adding the configurations, you can search up word the way you do it in vim and EasyMotion will highlight the word for you.
+EasyMotion also supports word search by searching word the way you do it in vim and EasyMotion will highlight the word for you.
 
 ![EasyMotionN] (http://imgur.com/DVc9xzl.gif)
 
@@ -116,13 +111,13 @@ For more EasyMotion configuration and explanation, go to [Github Lokaltog/vim-ea
 
 ###Plugin #5 - NERDtree:
 -------------------------
-NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree allows you to bookmark directories/files, open selected file within a file, checkout different folders, etc. 
+NERDtree allows you to view your files and directories in the form of a tree, bookmark directories/files, open selected files within a file, or checkout different folders. 
 
 Command | Result
 --- | ---
 ctrl n | open NERDtree and view all files in tree form
 arrow keys | navigate between files and directories
-<ENTER> | read files or directories
+ <ENTER> | read files or directories
 NERDTreeClose | close NERDtree
 
 ![NT2](http://i.imgur.com/rIwg8Wa.gif)
@@ -157,7 +152,7 @@ For more explanation on Gundo, go to [Gundo: Graph your Vim undo tree in style.]
 -------------------------
 Solarized changes the colorscheme of the vim editor. Often times, the default is not the best. It can be extremely irritating when you cannot differentiate between different types of files in vim. It is possible to change the font and customize the colors to your own preference.
 
-![Solarized2](http://imgur.com/KZK4LlC)
+![Solarized2](http://i.imgur.com/KZK4LlC.png)
 
 For more information about solarized, go to [Github altercation/vim-colors-solarized] (https://github.com/altercation/vim-colors-solarized)
 
@@ -177,7 +172,7 @@ yssb or yss) | surround an entire line with parentheses
 Below is an example of `cs"'`
 ![surround_cs](http://i.imgur.com/vT6J5Vk.gif)
 
-Below is an examplp of `ds"`
+Below is an example of `ds"`
 ![surround_ds](http://i.imgur.com/PPAyLsa.gif)
 
 Below is an example of `yssb`
