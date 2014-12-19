@@ -2,7 +2,7 @@ Introduction:
 -------------
 Getting started with vim could be a really difficult and boring task. Although vim is a really fun and easy tool, it is so different from Geany or Cloud9. This pre-configured vim package is something that can help anyone who just started to use vim enjoy it as much as we do. 
 
-In the package, there is a pre-configured .vimrc with all the configurations that can help coding faster. Wonder why? Download it and you can see the result. 
+In the package, there is a pre-configured `.vimrc` with all the configurations that can help coding faster. Wonder why? Download it and you can see the result. 
 
 As for the nine selected plugins, each are popular ones that every vim users should know. Want to jump between folders with a few keys? Want to comment a whole paragraph with just a snap? The nine selected plugins have features that make programming easier than ever. 
 
@@ -10,11 +10,11 @@ Installation:
 --------------
 Before installng, make sure you have git and vim.
 
-Type the command below to download .vimrc and all the included plugins.
+Type the command below to download `.vimrc` and all the included plugins.
 
 	sh <(curl https://github.com/atan009/vimrc/raw/master/download.sh -L)
 
-If the user already has .vim and .vimrc files, this installation will create a new directory called "old_vim_config" and move all the old files into it. 
+If the user already has .vim and `.vimrc` files, this installation will create a new directory called "old_vim_config" and move all the old files into it. 
 
 vim :neckbeard::zzz:
 -----------------------
@@ -26,17 +26,17 @@ To see what shortcuts other programmers love to use, go to [Stackoverflow: What 
 
 To learn more about what vim can do, go to [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
-.vimrc :no_mouth::question:
+`.vimrc` :no_mouth::question:
 -----------------------------
-After reading vimtutor, the first thing the users should do is to edit their .vimrc file. .vimrc is a file that allows the user to configure personal settings in vim. Although vim comes with many shortcuts, there are some features that users can only unlock with configuring their .vimrc file. For instance, to make vim show line numbers, the user needs to add `set number` in the .vimrc file. 
+After reading vimtutor, the first thing the users should do is to edit their `.vimrc` file. `.vimrc` is a file that allows the user to configure personal settings in vim. Although vim comes with many shortcuts, there are some features that users can only unlock with configuring their `.vimrc` file. For instance, to make vim show line numbers, the user needs to add `set number` in the `.vimrc` file. 
 
-The .vimrc in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the .vimrc file and the user decides to use some of the configurations that was not included, just take out the comments. 
+The `.vimrc` in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the `.vimrc` file and the user decides to use some of the configurations that was not included, just take out the comments. 
 
-Remember, it is always good to understand what each line of the configuration does before leaving it in the .vimrc file.
+Remember, it is always good to understand what each line of the configuration does before leaving it in the `.vimrc` file.
 
 Plugin:
 -------
-Even with vim and .vimrc, there are some features that users would wish vim could do. Simple tasks like commenting a paragraph or jumping between folders within a file are something that many programmers would love to be able to do. As a result, a lot of programmers started to write their own vim script file and enable these features. The vim script file that they write are called Plugins. Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. 
+Even with vim and `.vimrc`, there are some features that users would wish vim could do. Simple tasks like commenting a paragraph or jumping between folders within a file are something that many programmers would love to be able to do. As a result, a lot of programmers started to write their own vim script file and enable these features. The vim script file that they write are called Plugins. Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. 
 
 In this pre-configured vim package, there are nine plugins that are popular among vim-lovers:
 	
@@ -54,7 +54,7 @@ Surround | mapping tool
 Pathogen | simple plugin installation package
 
 #####Modifications:
-If the user wants to remove a plugin, just remove the directory of that plugin in the bundle directory. If the user wants to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, the user may need to modify the .vimrc file to fit the plugins needs.
+If the user wants to remove a plugin, just remove the directory of that plugin in the bundle directory. If the user wants to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, the user may need to modify the `.vimrc` file to fit the plugins needs.
 
 ###Plugin #0 - Pathogen:
 --------------------------
@@ -70,7 +70,7 @@ More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen
 -------------------------
 NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree allows the users to bookmark directories/files, open selected file within a file, checkout different folders, etc. 
 
-After installing NERDtree, first the user will need to add `map <C-n> :NERDTreeToggle<CR>` in .vimrc. This enables the shortcut ctrl-n to open up NERDtree and view all the files in a tree form :+1:. 
+After installing NERDtree, first the user will need to add `map <C-n> :NERDTreeToggle<CR>` in `.vimrc`. This enables the shortcut ctrl-n to open up NERDtree and view all the files in a tree form :+1:. 
 
 The user can navigate between files and directories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
 
@@ -93,7 +93,7 @@ More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 Solarized changes the colorscheme of the vim editor. Often times, the default is not the best. It can be extremely irritating when you cannot differentiate between different types of files in vim, as well as, the variety of things within source code. It is possible to change the font and customize the colors to your own
 preference.
 
-In the .vimrc file, type in below configuration to enable solarized colorscheme:
+In the `.vimrc` file, type in below configuration to enable solarized colorscheme:
 
 	"for dark background
 	syntax enable
@@ -160,7 +160,7 @@ For one character search, enter `<leader><leader>w` (in vim, `<leader>` means `\
 
 ![EasyMotionW](http://i.imgur.com/OuA4tDm.gif)
 
-EasyMotion also supports word search. To do this, add two configurations to your .vimrc file. 
+EasyMotion also supports word search. To do this, add two configurations to your `.vimrc` file. 
 	
 	map / <Plug>(easymotion-sn)
 	omap / <Plug>(easymotion-tn)
@@ -175,7 +175,7 @@ For more EasyMotion configuration and explanation, go to [Github Lokaltog/vim-ea
 ---------------------
 In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that graphs your vim into an undo tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
 
-To use Gundo, first you have to add a mapping to your .vimrc file. Here we use `<F5>` as example. 
+To use Gundo, first you have to add a mapping to your `.vimrc` file. Here we use `<F5>` as example. 
 
 	nnoremap <F5> :GundoToggle<CR>
 
