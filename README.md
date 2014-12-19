@@ -1,12 +1,10 @@
 A simple and effective vim configuation
 -------------
-Getting started with vim could be a really difficult and boring task. Although vim is a really fun and easy tool, it is so different from Geany or Cloud9. This pre-configured vim package is something that can help anyone who just started to use vim enjoy it as much as we do. 
+Getting started with vim can be a tedious and boring task. This pre-configured vim package is something that can make using vim more enjoyable and simpler for new users.
 
-In the package, there is a pre-configured `.vimrc` with all the configurations that can help coding faster. Wonder why? Download it and you can see the result. 
+The `.vimrc` in this pre-configured vim package contains many configurations that are commonly used. Some of the configurations are commented out. If after looking at the `.vimrc` file and you decide to use some of the configurations that are not included, just remove the comments.
 
-As for the nine selected plugins, each are popular ones that every vim users should know. Want to jump between folders with a few keys? Want to comment a whole paragraph with just a snap? The nine selected plugins have features that make programming easier than ever. 
-
-The `.vimrc` in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the `.vimrc` file and you decides to use some of the configurations that was not included, just take out the comments.
+As for the nine selected plugins, each are popular ones that every vim user should know. Want to jump between folders with a few keys? Want to comment a whole paragraph with just a snap? The nine selected plugins have features that make programming easier than ever.
 
 To see what other programmers think about vim, go to [Stackoverflow: Is learning VIM worth the effort?](http://stackoverflow.com/questions/597077/is-learning-vim-worth-the-effort) 
 
@@ -79,7 +77,7 @@ For more information about Syntastic, go to [Github scrooloose/syntastic] (https
 
 ###Plugin #2 - NERDcommenter:
 -----------------------------
-NERDcommenter is a plugin that makes commenting easier. It also makes removing comments easier. All of the commands can be done in either visual or normal mode.
+NERDcommenter is a plugin that makes adding and removing comments easier. All of the commands can be done in either visual or normal mode.
 
 Command | Effect
 --- | ---
@@ -135,7 +133,7 @@ More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
 ###Plugin #6 - Gundo:
 ---------------------
-In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that graphs your vim into an undo tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
+In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that displays your edit history in the form of a tree for you so, you can easily see the differences between the changes you made and jump back to any old version. 
 
 To use Gundo, first you have to add a mapping to your `.vimrc` file. Here we use `<F5>` as example. 
 
