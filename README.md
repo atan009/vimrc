@@ -1,8 +1,8 @@
 Introduction:
 -------------
-Getting started with vim could be a really difficult and boring task. Although vim is a really fun and easy tool, it is so different from Geany or Cloud9. This pre-configured vim package is something that hopefully can help anyone who just started to use vim like it as much as we do. 
+Getting started with vim could be a really difficult and boring task. Although vim is a really fun and easy tool, it is so different from Geany or Cloud9. This pre-configured vim package is something that can help anyone who just started to use vim enjoy it as much as we do. 
 
-In the package, there are a pre-configure .vimrc with all the configurations that can help coding faster. Wonder why? Download it and you can see the result. 
+In the package, there is a pre-configured .vimrc with all the configurations that can help coding faster. Wonder why? Download it and you can see the result. 
 
 As for the nine selected plugins, each are popular ones that every vim users should know. Want to jump between folders with a few keys? Want to comment a whole paragraph with just a snap? The nine selected plugins have features that make programming easier than ever. 
 
@@ -18,7 +18,7 @@ If the user already has .vim and .vimrc files, this installation will create a n
 
 vim :neckbeard::zzz:
 -----------------------
-Vim is a text editor that many programmers love to use. Not only is vim acailable on almost every Unix system, it also has a lot of powerful shortcuts that allows the users to do almost everything on the home tow. For instance, the user can jump to any line by typing `<linenumber> g`. Learning vim usually proves to be convenient and efficient.
+Vim is a text editor that many programmers love to use. Not only is vim available on almost every Unix system, it also has a lot of powerful shortcuts that allow the users to do almost everything on the home row. For instance, the user can jump to any line by typing `<linenumber> g`. Learning vim usually proves to be convenient and efficient.
 
 To see what other programmers think about vim, go to [Stackoverflow: Is learning VIM worth the effort?](http://stackoverflow.com/questions/597077/is-learning-vim-worth-the-effort) 
 
@@ -28,7 +28,7 @@ To learn more about what vim can do, go to [The Vim Editor: What Vim Can Do] (ht
 
 .vimrc :no_mouth::question:
 -----------------------------
-After reading vimtutor, the first thing the users should do is to edit their .vimrc file. .vimrc is a file that allows user to configure personal settings in vim. Although vim comes with many shortcuts, there are some features that users can only unlock with configuring their .vimrc file. For instance, to make vim shows line number, the user needs to add `set number` in the .vimrc file. 
+After reading vimtutor, the first thing the users should do is to edit their .vimrc file. .vimrc is a file that allows the user to configure personal settings in vim. Although vim comes with many shortcuts, there are some features that users can only unlock with configuring their .vimrc file. For instance, to make vim show line numbers, the user needs to add `set number` in the .vimrc file. 
 
 The .vimrc in this pre-configured vim package contains a lot of configuration that are commonly used. Some of the configurations are commented out. If after looking at the .vimrc file and the user decides to use some of the configurations that was not included, just take out the comments. 
 
@@ -36,9 +36,9 @@ Remember, it is always good to understand what each line of the configuration do
 
 Plugin:
 -------
-Even with vim and .vimrc, there are some features that users would wish vim could do. Simple tasks like commenting a paragraph or jumping between folders within a file are something that many programmers would love to be able to do. As a result, a lot of programmers started to write their own vim script file and enable these features. The vim script file that they write are called Plugin.Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. 
+Even with vim and .vimrc, there are some features that users would wish vim could do. Simple tasks like commenting a paragraph or jumping between folders within a file are something that many programmers would love to be able to do. As a result, a lot of programmers started to write their own vim script file and enable these features. The vim script file that they write are called Plugins. Using plugins not only makes it easier and faster to code in vim, but it also personalizes the text editor for the programmer. 
 
-In this pre-configured vim package, there are nine plugins that are popular amonog the vim-lovers:
+In this pre-configured vim package, there are nine plugins that are popular among vim-lovers:
 	
 	Pathogen	   simple plugin installation package
 	NERDtree	   easily browse and access files and directories in tree form
@@ -68,9 +68,9 @@ More info at: [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen
 -------------------------
 NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree allows the users to bookmark directories/files, open selected file within a file, checkout different folders, etc. 
 
-After installing NERDtree, first the user will need to add `map <C-n> :NERDTreeToggle<CR>` in .vimrc. This enable the shortcut ctrl-n to open up NERDtree and view all the files in a tree form :+1:. 
+After installing NERDtree, first the user will need to add `map <C-n> :NERDTreeToggle<CR>` in .vimrc. This enables the shortcut ctrl-n to open up NERDtree and view all the files in a tree form :+1:. 
 
-User can navigate between files and firectories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
+The user can navigate between files and directories with the arrow keys. To read the files or directories, press `<ENTER>`. To close NERDtree type `NERDTreeClose`. 
 
 ![NT2](http://i.imgur.com/rIwg8Wa.gif)
 
@@ -80,7 +80,7 @@ For more tips on NERDtree, go to [tuts+: Vim Essential Plugin: NERDTree](http://
 
 ###Plugin #2 - SuperTab:
 --------------------------
-SuperTab aids the user in quickly typing in strings of characters, but only pre-existing ones. This is useful for users that enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which the user can choose the correct one by type `<TAB>` to alternate between different words.
+SuperTab aids the user in quickly typing in strings of characters, but only pre-existing ones. This is useful for users that enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which the user can choose the correct one by pressing `<TAB>` to alternate between different words.
 
 ![ST1](http://i.imgur.com/syafUJu.gif)
 
@@ -88,7 +88,7 @@ More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
 ###Plugin #3 - Solarized:
 -------------------------
-Solarized changes the colorscheme of the vim editor. Often times, the default is not the best. It can be extremely irritable when you cannot differentiate between different types of files in vim as well as the variety of things within source code. It is possible to change the font and customize the colors to your own
+Solarized changes the colorscheme of the vim editor. Often times, the default is not the best. It can be extremely irritating when you cannot differentiate between different types of files in vim, as well as, the variety of things within source code. It is possible to change the font and customize the colors to your own
 preference.
 
 In the .vimrc file, type in below configuration to enable solarized colorscheme:
@@ -156,7 +156,7 @@ For more informaiton about Surround, go to [Github tpope/vim-surround] (https://
 --------------------------
 EasyMotion helps you make large jump within a buffer easier and faster. It allows you to make jumps by searching up your destination. 
 
-For one character search, enter `<leader><leader>w` (in vim, `<leader>` means `\`). A word `Target:` will appear in the commadn bar .Enter any character you want to search and EasyMotion will highlight all the appearances of the character in the buffer. Enter the one you want to jump to and EasyMotion will take you there.
+For one character search, enter `<leader><leader>w` (in vim, `<leader>` means `\`). A word `Target:` will appear in the command line. Enter any character you want to search for and EasyMotion will highlight all the appearances of the character in the buffer. Enter the one you want to jump to and EasyMotion will take you there.
 
 ![EasyMotionW](http://i.imgur.com/OuA4tDm.gif)
 
@@ -173,7 +173,7 @@ For more EasyMotion configuration and explanation, go to [Github Lokaltog/vim-ea
 
 ###Plugin #8 - Gundo:
 ---------------------
-In vim, all the changes you make to your file are save as a tree. Gundo is a plugin that graph your vim undo tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
+In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that graphs your vim into an undo tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
 
 To use Gundo, first you have to add a mapping to your .vimrc file. Here we use `<F5>` as example. 
 
@@ -181,7 +181,7 @@ To use Gundo, first you have to add a mapping to your .vimrc file. Here we use `
 
 Now when we press `<F5>` in a file, Gundo will show us a graph of the tree of changes. Our current position in the undo tree is the one marker with `@`. To move between the graph, use `j` and `k` keys. Like vim, `gg` jumps to top of the file while `G` brings you ot the bottom of the file.  
 
-Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between current state and selected state. 
+Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between the current state and selected state. 
 
 ![Gundo](http://imgur.com/CJcWY8a.gif)
 
@@ -191,7 +191,7 @@ For more explanation on Gundo, go to [Gundo: Graph your Vim undo tree in style.]
 
 ###Plugin #9 - Fugitive:
 ------------------------
-As a git user, fugitive is probably the most useful plugin in this tutorial. It is a Git wrapper that collects and creates a lot of shortcuts of git. With fugitive, user can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
+As a git user, fugitive is probably the most useful plugin in this tutorial. It is a Git wrapper that collects and creates a lot of shortcuts for git. With fugitive, users can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
 
 To make it easier, here are a list of fugitive commands:
 	
