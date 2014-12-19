@@ -5,7 +5,7 @@
 cd
 
 #download the repo
-git clone https://github.com/atan009/vimrc
+git clone --recursive https://github.com/atan009/vimrc
 
 #check if .vimrc and .vim already exist
 #if yes, rename the file and move it to a folder called old_vim
