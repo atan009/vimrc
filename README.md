@@ -82,7 +82,7 @@ For more tips on NERDtree, go to [tuts+: Vim Essential Plugin: NERDTree](http://
 --------------------------
 SuperTab aids the user in quickly typing in strings of characters, but only pre-existing ones. This is useful for users that enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which the user can choose the correct one by type `<TAB>` to alternate between different words.
 
-![ST1](http://i.imgur.com/i12YWak.gif)
+![ST1](http://i.imgur.com/syafUJu.gif)
 
 More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
@@ -115,7 +115,7 @@ Alternate color schemes include [Github sjl/badwolf] (https://github.com/sjl/bad
 Syntastic is a plugin which will save all programmers time. It detects for syntax errors BEFORE you even compile. As all programmers know, these errors happen by mistake all the time and can be annoying after receiving those thousands of other logic errors. A highly recommended plugin for anyone who hates searching through their code for one syntax error. Errors are identified only after everytime the file is saved. When highlighting a line of error, the error will be displayed at the bottom of the terminal. A line of error will be show with `>>` next
 to it.
 
-![Syntastic](http://i.imgur.com/LPHf6U7.gif)
+![Syntastic](http://i.imgur.com/xSCqoat.gif)
 
 For more information about Syntastic, go to [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
 
