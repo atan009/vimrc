@@ -56,7 +56,7 @@ Pathogen | simple plugin installation package
 #####Modifications:
 If you want to remove a plugin, just remove the directory of that plugin in the bundle directory. If you want to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
 
-###Plugin #9 - Fugitive:
+###Plugin #0 - Fugitive:
 ------------------------
 As a git user, fugitive is probably the most useful plugin in this tutorial. It is a Git wrapper that collects and creates a lot of shortcuts for git. With fugitive, you can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
 
@@ -78,7 +78,7 @@ The gif belows demonstrates how I check the status using :Gstatus, add my README
 
 For more explanation on `Fugitive`, go to [Github tpope/vim-fugitive] (https://github.com/tpope/vim-fugitive)
 
-###Plugin #4 - Syntastic:
+###Plugin #1 - Syntastic:
 ---------------------------
 Syntastic is a plugin which will save all programmers time. It detects for syntax errors BEFORE you even compile. As all programmers know, these errors happen by mistake all the time and can be annoying after receiving those thousands of other logic errors. A highly recommended plugin for anyone who hates searching through their code for one syntax error. Errors are identified only after everytime the file is saved. When highlighting a line of error, the error will be displayed at the bottom of the terminal. A line of error will be show with `>>` next
 to it.
@@ -87,7 +87,7 @@ to it.
 
 For more information about Syntastic, go to [Github scrooloose/syntastic] (https://github.com/scrooloose/syntastic)
 
-###Plugin #5 - NERDcommenter:
+###Plugin #2 - NERDcommenter:
 -----------------------------
 NERDcommenter is a plugin that makes commenting easier. It also makes removing comments easier. All of the commands can be done in either visual or normal mode.
 
@@ -102,7 +102,7 @@ Command | Effect
 
 For more information about NERDcommenter, go to [Github scrooloose/nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 
-###Plugin #7 - EasyMotion:
+###Plugin #3 - EasyMotion:
 --------------------------
 EasyMotion helps you make large jump within a buffer easier and faster. It allows you to make jumps by searching up your destination. 
 
@@ -121,7 +121,7 @@ After adding the configurations, you can search up word the way you do it in vim
 
 For more EasyMotion configuration and explanation, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
 
-###Plugin #1 - NERDtree:
+###Plugin #4 - NERDtree:
 -------------------------
 NERDtree allows you to view your files and directories in the form of a tree. You can easily access your files by using the mouse or arrow keys this way. NERDtree allows you to bookmark directories/files, open selected file within a file, checkout different folders, etc. 
 
@@ -135,7 +135,7 @@ For more infomation about the creater, check [Github scrooloose/nerdtree] (https
 
 For more tips on NERDtree, go to [tuts+: Vim Essential Plugin: NERDTree](http://code.tutsplus.com/tutorials/vim-essential-plugin-nerdtree--net-19692)
 
-###Plugin #2 - SuperTab:
+###Plugin #5 - SuperTab:
 --------------------------
 SuperTab aids you in quickly typing in strings of characters, but only pre-existing ones. This is useful if you enjoy automatic text filling. By typing a few characters and pressing `<TAB>` the word will be filled automatically, unless there is more than one existing string with the same characters typed. In this situation, a list of words will be shown in which you can choose the correct one by pressing `<TAB>` to alternate between different words.
 
@@ -143,7 +143,7 @@ SuperTab aids you in quickly typing in strings of characters, but only pre-exist
 
 More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
-###Plugin #8 - Gundo:
+###Plugin #6 - Gundo:
 ---------------------
 In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that graphs your vim into an undo tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
 
@@ -161,7 +161,7 @@ To quit the undo tree, press `q`.
 
 For more explanation on Gundo, go to [Gundo: Graph your Vim undo tree in style.] (http://sjl.bitbucket.org/gundo.vim/)
 
-###Plugin #3 - Solarized:
+###Plugin #7 - Solarized:
 -------------------------
 Solarized changes the colorscheme of the vim editor. Often times, the default is not the best. It can be extremely irritating when you cannot differentiate between different types of files in vim, as well as, the variety of things within source code. It is possible to change the font and customize the colors to your own
 preference.
@@ -180,7 +180,7 @@ For more information about solarized, go to [Github altercation/vim-colors-solar
 Alternate color schemes include [Github sjl/badwolf] (https://github.com/sjl/badwolf/)
 					, [Github tomasr/molokai] (https://github.com/tomasr/molokai)
 
-###Plugin #6 - Surround:
+###Plugin #8 - Surround:
 ------------------------
 Surround aids you in adding, changing or deleting mappings. This includes parentheses, brackets and more. 
 
@@ -200,7 +200,7 @@ Surround aids you in adding, changing or deleting mappings. This includes parent
 
 For more informaiton about Surround, go to [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
 
-###Plugin #0 - Pathogen:
+###Plugin #9 - Pathogen:
 --------------------------
 Pathogen is a plugin that will make installing other plugins easier. It also allows runtime files to be installed in their own private directories. Pathogen is not the only plugin manager, but it is the only one included here. There are many other plugin managers, but Pathogen appeared to be the most basic one.
 
