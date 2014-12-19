@@ -83,10 +83,10 @@ set complete+=kspell
 
 
 ".vimrc Config for Solarized Colorscheme
-"syntax enable
-"set background=dark "for dark background
+syntax enable
+set background=dark "for dark background
 "set background=light "for light background
-"colorscheme solarized
+colorscheme solarized
 
 "if user wants to different background in GUI and temrminal
 "if has('gui_running')
@@ -96,10 +96,14 @@ set complete+=kspell
 "endif
 
 ".vimrc Config for NERDcommenter
-"filetype plugin on
+filetype plugin on
 
 ".vimrc Config for EasyMotion
-"let g:EasyMotion_do_mapping = 0 " Disable default mappings
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+"whole word search
+map / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
 
 " Bi-directional find motion
 " Jump to anywhere you want with minimal keystrokes, with just one key binding.
@@ -118,10 +122,14 @@ set complete+=kspell
 "map <Leader>k <Plug>(easymotion-k)
 
 ".vimrc Config for Gundo
-"nnoremap<F5> :GundoToggle<CR>
+nnoremap<F5> :GundoToggle<CR>
 "adjust width, height, and preview buttom
 "below are all same as default
 "let g:gundo_width = 45
 "let g:gundo_preview_height = 15
 "let g:gundo_right = 0
+
+"NERDTree
+map <c-n> :NERDtreeToggle
+
 
