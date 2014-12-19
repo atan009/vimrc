@@ -117,7 +117,7 @@ Command | Result
 --- | ---
 ctrl n | open NERDtree and view all files in tree form
 arrow keys | navigate between files and directories
- <ENTER> | read files or directories
+\<ENTER> | read files or directories
 NERDTreeClose | close NERDtree
 
 ![NT2](http://i.imgur.com/rIwg8Wa.gif)
