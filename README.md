@@ -1,6 +1,6 @@
 A simple and effective vim configuation
 -------------
-Getting started with vim can be a tedious and boring task. This pre-configured vim package is something that can make using vim more enjoyable and simpler for new users.
+Getting started with vim can be a tedious and boring task. This pre-configured vim package is something that can make using vim more enjoyable and simple for new users.
 
 The `.vimrc` in this pre-configured vim package contains many configurations that are commonly used. Some of the configurations are commented out. If after looking at the `.vimrc` file and you decide to use some of the configurations that are not included, just remove the comments.
 
@@ -12,6 +12,8 @@ To see what shortcuts other programmers love to use, go to [Stackoverflow: What 
 
 To learn more about what vim can do, go to [The Vim Editor: What Vim Can Do] (http://www.vim.org/about.php)
 
+To see an introduction on `.vimrc`, go to [The Vim Editor: Open vimrc file](http://vim.wikia.com/wiki/Open_vimrc_file)
+
 Installation:
 --------------
 Before installng, make sure you have git and vim.
@@ -20,7 +22,7 @@ Type the command below to download `.vimrc` and all the included plugins.
 
 	sh <(curl https://github.com/atan009/vimrc/raw/master/download.sh -L)
 
-If the you already have .vim and `.vimrc` files, this installation will create a new directory called "old_vim_config" and move all the old files into it. 
+If you already have `.vim` and `.vimrc`, this installation will create a new directory called `old_vim_config` and move all the old files into it. 
 
 Plugin:
 -------
@@ -31,10 +33,10 @@ In this pre-configured vim package, there are nine plugins that are popular amon
 Plugin | Description
 --- | ---
 [Fugitive](https://github.com/atan009/vimrc#plugin-1---fugitive) | git wrapper
-[Syntastic](https://github.com/atan009/vimrc#plugin-2---syntastic) |best syntax error detector
+[Syntastic](https://github.com/atan009/vimrc#plugin-2---syntastic) | syntax error detector
 [NERDcommenter](https://github.com/atan009/vimrc#plugin-3---nerdcommenter) | commenting helper
 [EasyMotion](https://github.com/atan009/vimrc#plugin-4---easymotion) | fast searching/jumping tool
-[NERDtree](https://github.com/atan009/vimrc#plugin-5---nerdtree) | easily browse and access files and directories in tree form
+[NERDtree](https://github.com/atan009/vimrc#plugin-5---nerdtree) | a file explorer
 [SuperTab](https://github.com/atan009/vimrc#plugin-6---supertab) | fast typing filled-in aid
 [Gundo](https://github.com/atan009/vimrc#plugin-7---gundo) | simplistic undo tree
 [Solarized](https://github.com/atan009/vimrc#plugin-8---solarized) | stylish colorscheme
@@ -42,11 +44,11 @@ Plugin | Description
 [Pathogen](https://github.com/atan009/vimrc#plugin-10---pathogen) | simple plugin installation package
 
 #####Modifications:
-If you want to remove a plugin, just remove the directory of that plugin in the bundle directory. If you want to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
+If you want to remove a plugin, just remove the directory of that plugin in the bundle directory. If you want to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, you may need to modify  `.vimrc` to fit the plugins needs.
 
 ###Plugin #1 - Fugitive:
 ------------------------
-As a git user, fugitive is probably the most useful plugin in this tutorial. It is a Git wrapper that collects and creates a lot of shortcuts for git. With fugitive, you can add, push, commit, checkout status or branches, and do any other things that they can do with `git`, but a lot faster. 
+As a git user, fugitive is probably the most useful plugin in this tutorial. It is a Git wrapper that collects and creates a lot of shortcuts for git. With fugitive, you can add, push, commit, checkout status or branches, and do any other things that git can do, but a lot faster. 
 
 To make it easier, here are a list of fugitive commands:
 	
@@ -55,21 +57,23 @@ Fugitive Command | Git Command
 :Gstatus | git status
 :Gwrite	| git add <filename>
 :Gcommit | git commit
+:Gpush | git push
 :Gblame	| git blame
 :Gmove | git mv
 :Ggrep | git grep
 :Gread | git checkout --<filename>
 
-The gif belows demonstrates how to check the status using :Gstatus, add README.md using :Gwrite, commit the file using :Gcommit, and push the file github repo using :Gpush.
+The gif belows demonstrates how to check the status using :Gstatus, add README.md using :Gwrite, commit the file using :Gcommit, and push the file to github repo using :Gpush.
 
 ![fugitive](http://imgur.com/Vqxu02C.gif)
 
-For more explanation on `Fugitive`, go to [Github tpope/vim-fugitive] (https://github.com/tpope/vim-fugitive)
+For more explanation on Fugitive, go to [Github tpope/vim-fugitive] (https://github.com/tpope/vim-fugitive)
 
 ###Plugin #2 - Syntastic:
 ---------------------------
-Syntastic is a plugin which will save all programmers time. It detects for syntax errors BEFORE you even compile. As all programmers know, these errors happen by mistake all the time and can be annoying after receiving those thousands of other logic errors. A highly recommended plugin for anyone who hates searching through their code for one syntax error. Errors are identified only after everytime the file is saved. When highlighting a line of error, the error will be displayed at the bottom of the terminal. A line of error will be show with `>>` next
-to it.
+Syntastic is a plugin which will save all programmers time. It detects syntax errors BEFORE you even compile. As all programmers know, these errors happen by mistake all the time and can be annoying. This is a highly recommended plugin for anyone who hates searching through their code for one syntax error.
+
+Syntastic identifies errors after everytime a file is saved. When highlighting a line of error, the error will be displayed at the bottom of the terminal. A line of error will be show with `>>` next to it.
 
 ![Syntastic](http://i.imgur.com/xSCqoat.gif)
 
@@ -77,13 +81,13 @@ For more information about Syntastic, go to [Github scrooloose/syntastic] (https
 
 ###Plugin #3 - NERDcommenter:
 -----------------------------
-NERDcommenter is a plugin that makes adding and removing comments easier. All of the commands can be done in either visual or normal mode.
+NERDcommenter is a plugin that makes adding and removing comments easy. All of the commands can be done in either visual or normal mode.
 
 Command | Effect
 --- | ---
-\cc | to comment out the line highlighted by the cursor.
-\ci | toggle the state of the highlighted lines. 
-\cu | uncomment the line that the cursor is highlighting. 
+\cc | comment out the line highlighted by the cursor
+\ci | toggle the state of the highlighted lines
+\cu | uncomment the line that the cursor is highlighting 
 \cs | comment the highlighted using /* and */ rather than the ordinary //
 
 Below shows example of using \ci and \cu to comment out single line.
@@ -103,15 +107,15 @@ For one character search, enter `\\w`. A word `Target:` will appear in the comma
 
 ![EasyMotionW](http://i.imgur.com/OuA4tDm.gif)
 
-EasyMotion also supports word search by searching word the way you do it in vim and EasyMotion will highlight the word for you.
+EasyMotion will override vim's word search and highlight corresponding matches.
 
 ![EasyMotionN] (http://imgur.com/DVc9xzl.gif)
 
-For more EasyMotion configuration and explanation, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
+For more information about EasyMotion, go to [Github Lokaltog/vim-easymotion] (https://github.com/Lokaltog/vim-easymotion)
 
 ###Plugin #5 - NERDtree:
 -------------------------
-NERDtree allows you to view your files and directories in the form of a tree, bookmark directories/files, open selected files within a file, or checkout different folders. 
+NERDtree allows you to view your files and directories in the form of a tree, bookmark directories/files, open selected files within a file, and checkout different folders. 
 
 Command | Result
 --- | ---
@@ -122,7 +126,7 @@ NERDTreeClose | close NERDtree
 
 ![NT2](http://i.imgur.com/rIwg8Wa.gif)
 
-For more infomation about the creater, check [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
+For more infomation about NERDtree, go to [Github scrooloose/nerdtree] (https://github.com/scrooloose/nerdtree)
 
 For more tips on NERDtree, go to [tuts+: Vim Essential Plugin: NERDTree](http://code.tutsplus.com/tutorials/vim-essential-plugin-nerdtree--net-19692)
 
@@ -132,13 +136,13 @@ SuperTab aids you in quickly typing in strings of characters, but only pre-exist
 
 ![ST1](http://i.imgur.com/syafUJu.gif)
 
-More info at: [Github ervandew/supertab] (https://github.com/ervandew/supertab)
+For more information about Supertab, go to [Github ervandew/supertab] (https://github.com/ervandew/supertab)
 
 ###Plugin #7 - Gundo:
 ---------------------
-In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that displays your edit history in the form of a tree for you so you can easily see the differences between the changes you made and jump back to any old version. 
+In vim, all the changes you make to your file are saved as a tree. Gundo is a plugin that displays your edit history in the form of a tree so you can easily see the differences between previous changes and jump back to any old version. 
 
-Press `<F5>` in a file to traverse the graph of the tree of changes. Our current position in the undo tree is the one marker with `@`. To move between the graph, use `j` and `k` keys. Like vim, `gg` jumps to top of the file while `G` brings you to the bottom of the file.  
+Press `<F5>` in a file to traverse the graph of the tree of changes. Default current position in the undo tree is the one marked with `@`. To move between the graph, use `j` and `k` keys. Like vim, `gg` jumps to top of the file while `G` brings you to the bottom of the file.  
 
 Press `return` on a state to revert the content of the file and use `p` to make the preview window show the differences between the current state and selected state. 
 
@@ -146,7 +150,7 @@ Press `return` on a state to revert the content of the file and use `p` to make 
 
 To quit the undo tree, press `q`. 
 
-For more explanation on Gundo, go to [Gundo: Graph your Vim undo tree in style.] (http://sjl.bitbucket.org/gundo.vim/)
+For more explanation about Gundo, go to [Gundo: Graph your Vim undo tree in style.] (http://sjl.bitbucket.org/gundo.vim/)
 
 ###Plugin #8 - Solarized:
 -------------------------
@@ -161,13 +165,13 @@ Alternate color schemes include [Github sjl/badwolf] (https://github.com/sjl/bad
 
 ###Plugin #9 - Surround:
 ------------------------
-Surround aids you in adding, changing or deleting delimiters. This includes parentheses, brackets and more. 
+Surround aids you in adding, changing or deleting delimiters. Below are three most commonly used commands.
 
 command | result
 --- | --- 
-cs<old char><new char> | replace occurences of the old char with the new char
+cs\<old char>\<new char> | replace occurences of the old char with the new char
 ds" | remove the delimiters
-yssb or yss) | surround an entire line with parentheses 
+yssb or yss) | surround an entire line with parenthesis 
 
 Below is an example of `cs"'`
 ![surround_cs](http://i.imgur.com/vT6J5Vk.gif)
@@ -178,7 +182,7 @@ Below is an example of `ds"`
 Below is an example of `yssb`
 ![surround_yssb](http://i.imgur.com/SxEv9DN.gif)
 
-For more informaiton about Surround, go to [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
+For more information about Surround, go to [Github tpope/vim-surround] (https://github.com/tpope/vim-surround)
 
 ###Plugin #10 - Pathogen:
 --------------------------
@@ -188,5 +192,5 @@ Alternate Plugin Manager include [Github MarcWeber/vim-addon-manager] (https://g
 , [Github gmarik/Vundle.vim] (https://github.com/gmarik/Vundle.vim)
 , [Github Shougo/neobundle.vim] (https://github.com/Shougo/neobundle.vim)
 
-More information can be found at [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen)
+For more information about Pathogen, go to [Github tpope/vim-pathogen] (https://github.com/tpope/vim-pathogen)
 
