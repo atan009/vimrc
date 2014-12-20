@@ -5,7 +5,7 @@
 cd
 
 #download the repo
-git submodule add --branch master https://github.com/atan009/vimrc ~/.vim/bundle/syntastic
+git submodule add --branch master https://github.com/Lokaltog/vim-easymotion.git ~/.vim/bundle/easymotion
 git clone --recursive https://github.com/atan009/vimrc
 
 #check if .vimrc and .vim already exist
