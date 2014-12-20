@@ -30,16 +30,16 @@ In this pre-configured vim package, there are nine plugins that are popular amon
 	
 Plugin | Description
 --- | ---
-[Fugitive](https://github.com/atan009/vimrc#plugin-0---fugitive) | git wrapper
-[Syntasitic](https://github.com/atan009/vimrc#plugin-1---syntastic) |best syntax error detector
-[NERDcommenter](https://github.com/atan009/vimrc#plugin-2---nerdcommenter) | commenting helper
-[EasyMotion](https://github.com/atan009/vimrc#plugin-3---easymotion) | fast searching/jumping tool
-[NERDtree](https://github.com/atan009/vimrc#plugin-4---nerdtree) | easily browse and access files and directories in tree form
-[SuperTab](https://github.com/atan009/vimrc#plugin-5---supertab) | fast typing filled-in aid
-[Gundo](https://github.com/atan009/vimrc#plugin-6---gundo) | simplistic undo tree
-[Solarized](https://github.com/atan009/vimrc#plugin-7---solarized) | stylish colorscheme
-[Surround](https://github.com/atan009/vimrc#plugin-8---surround) | mapping tool
-[Pathogen](https://github.com/atan009/vimrc#plugin-9---pathogen) | simple plugin installation package
+[Fugitive](https://github.com/atan009/vimrc#plugin-1---fugitive) | git wrapper
+[Syntastic](https://github.com/atan009/vimrc#plugin-2---syntastic) |best syntax error detector
+[NERDcommenter](https://github.com/atan009/vimrc#plugin-3---nerdcommenter) | commenting helper
+[EasyMotion](https://github.com/atan009/vimrc#plugin-4---easymotion) | fast searching/jumping tool
+[NERDtree](https://github.com/atan009/vimrc#plugin-5---nerdtree) | easily browse and access files and directories in tree form
+[SuperTab](https://github.com/atan009/vimrc#plugin-6---supertab) | fast typing filled-in aid
+[Gundo](https://github.com/atan009/vimrc#plugin-7---gundo) | simplistic undo tree
+[Solarized](https://github.com/atan009/vimrc#plugin-8---solarized) | stylish colorscheme
+[Surround](https://github.com/atan009/vimrc#plugin-9---surround) | mapping tool
+[Pathogen](https://github.com/atan009/vimrc#plugin-10---pathogen) | simple plugin installation package
 
 #####Modifications:
 If you want to remove a plugin, just remove the directory of that plugin in the bundle directory. If you want to add a plugin, the first thing to do is to check whether the new plugin is compatible with the other plugins. If it is, simply install it by following the installation directions given by the creator. Depending on the plugin, you may need to modify the `.vimrc` file to fit the plugins needs.
